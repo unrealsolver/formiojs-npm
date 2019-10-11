@@ -3281,6 +3281,1369 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 
 /***/ }),
 
+/***/ "./lib/templates/bulma/builder/form.ejs.js":
+/*!*************************************************!*\
+  !*** ./lib/templates/bulma/builder/form.ejs.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += '<div class=\"formio builder row formbuilder\">\\n  <div class=\"col-xs-4 col-sm-3 col-md-2 formcomponents\">\\n    ' +\n((__t = (ctx.sidebar)) == null ? '' : __t) +\n'\\n  </div>\\n  <div class=\"col-xs-8 col-sm-9 col-md-10 formarea\" ref=\"form\">\\n    ' +\n((__t = (ctx.form)) == null ? '' : __t) +\n'\\n  </div>\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/builder/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/builder/index.js":
+/*!**********************************************!*\
+  !*** ./lib/templates/bulma/builder/index.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/builder/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/builder/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/builderComponent/form.ejs.js":
+/*!**********************************************************!*\
+  !*** ./lib/templates/bulma/builderComponent/form.ejs.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += '<div class=\"builder-component\" ref=\"dragComponent\">\\n  <div class=\"component-btn-group\">\\n    <div class=\"btn btn-xxs btn-danger component-settings-button component-settings-button-remove\" ref=\"removeComponent\">\\n      <i class=\"' +\n((__t = (ctx.iconClass('remove'))) == null ? '' : __t) +\n'\"></i>\\n    </div>\\n    <div class=\"btn btn-xxs btn-default component-settings-button component-settings-button-copy\" ref=\"copyComponent\">\\n      <i class=\"' +\n((__t = (ctx.iconClass('copy'))) == null ? '' : __t) +\n'\"></i>\\n    </div>\\n    <div class=\"btn btn-xxs btn-default component-settings-button component-settings-button-paste\" ref=\"pasteComponent\">\\n      <i class=\"' +\n((__t = (ctx.iconClass('save'))) == null ? '' : __t) +\n'\"></i>\\n    </div>\\n    <div class=\"btn btn-xxs btn-default component-settings-button component-settings-button-edit-json\" ref=\"editJson\">\\n      <i class=\"' +\n((__t = (ctx.iconClass('wrench'))) == null ? '' : __t) +\n'\"></i>\\n    </div>\\n    <div class=\"btn btn-xxs btn-default component-settings-button component-settings-button-move\" ref=\"moveComponent\">\\n      <i class=\"' +\n((__t = (ctx.iconClass('move'))) == null ? '' : __t) +\n'\"></i>\\n    </div>\\n    <div class=\"btn btn-xxs btn-secondary component-settings-button component-settings-button-edit\", ref=\"editComponent\">\\n      <i class=\"' +\n((__t = (ctx.iconClass('cog'))) == null ? '' : __t) +\n'\"></i>\\n    </div>\\n  </div>\\n  ' +\n((__t = (ctx.html)) == null ? '' : __t) +\n'\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/builderComponent/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/builderComponent/index.js":
+/*!*******************************************************!*\
+  !*** ./lib/templates/bulma/builderComponent/index.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/builderComponent/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/builderComponent/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/builderComponents/form.ejs.js":
+/*!***********************************************************!*\
+  !*** ./lib/templates/bulma/builderComponents/form.ejs.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += '<div class=\"builder-components drag-container formio-builder-' +\n((__t = (ctx.type)) == null ? '' : __t) +\n'\" ref=\"' +\n((__t = (ctx.key)) == null ? '' : __t) +\n'-container\">\\n  ' +\n((__t = (ctx.html)) == null ? '' : __t) +\n'\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/builderComponents/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/builderComponents/index.js":
+/*!********************************************************!*\
+  !*** ./lib/templates/bulma/builderComponents/index.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/builderComponents/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/builderComponents/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/builderEditForm/form.ejs.js":
+/*!*********************************************************!*\
+  !*** ./lib/templates/bulma/builderEditForm/form.ejs.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<div class=\"row\">\\n  <div class=\"col col-sm-6\">\\n    <p class=\"lead\">' +\n((__t = (ctx.t(ctx.componentInfo.title))) == null ? '' : __t) +\n' ' +\n((__t = (ctx.t('Component'))) == null ? '' : __t) +\n'</p>\\n  </div>\\n  <div class=\"col col-sm-6\">\\n    <div class=\"float-right\" style=\"margin-right: 20px; margin-top: 10px\">\\n      <a href=\"' +\n((__t = (ctx.t(ctx.componentInfo.documentation))) == null ? '' : __t) +\n'\" target=\"_blank\">\\n        <i class=\"' +\n((__t = (ctx.iconClass('new-window'))) == null ? '' : __t) +\n'\"> ' +\n((__t = (ctx.t('Help'))) == null ? '' : __t) +\n'</i>\\n      </a>\\n    </div>\\n  </div>\\n</div>\\n<div class=\"row\">\\n  <div class=\"col ';\n if (ctx.preview) { ;\n__p += 'col-sm-6';\n } else { ;\n__p += 'col-sm-12';\n } ;\n__p += '\">\\n    <div ref=\"editForm\">\\n        ' +\n((__t = (ctx.editForm)) == null ? '' : __t) +\n'\\n    </div>\\n    ';\n if (!ctx.preview) { ;\n__p += '\\n    <div style=\"margin-top: 10px;\">\\n      <button class=\"btn btn-success\" style=\"margin-right: 10px;\" ref=\"saveButton\">' +\n((__t = (ctx.t('Save'))) == null ? '' : __t) +\n'</button>\\n      <button class=\"btn btn-secondary\" style=\"margin-right: 10px;\" ref=\"cancelButton\">' +\n((__t = (ctx.t('Cancel'))) == null ? '' : __t) +\n'</button>\\n      <button class=\"btn btn-danger\" ref=\"removeButton\">' +\n((__t = (ctx.t('Remove'))) == null ? '' : __t) +\n'</button>\\n    </div>\\n    ';\n } ;\n__p += '\\n  </div>\\n  ';\n if (ctx.preview) { ;\n__p += '\\n  <div class=\"col col-sm-6\">\\n    <div class=\"card panel preview-panel\">\\n      <div class=\"card-header\">\\n        <h4 class=\"card-title mb-0\">' +\n((__t = (ctx.t('Preview'))) == null ? '' : __t) +\n'</h4>\\n      </div>\\n      <div class=\"card-body\">\\n        <div class=\"component-preview\" ref=\"preview\">\\n          ' +\n((__t = (ctx.preview)) == null ? '' : __t) +\n'\\n        </div>\\n      </div>\\n    </div>\\n    ';\n if (ctx.componentInfo.help) { ;\n__p += '\\n    <div class=\"card card-body bg-light formio-settings-help\">\\n      ' +\n((__t = ( ctx.t(ctx.componentInfo.help) )) == null ? '' : __t) +\n'\\n    </div>\\n    ';\n } ;\n__p += '\\n    <div style=\"margin-top: 10px;\">\\n      <button class=\"btn btn-success\" style=\"margin-right: 10px;\" ref=\"saveButton\">' +\n((__t = (ctx.t('Save'))) == null ? '' : __t) +\n'</button>\\n      <button class=\"btn btn-secondary\" style=\"margin-right: 10px;\" ref=\"cancelButton\">' +\n((__t = (ctx.t('Cancel'))) == null ? '' : __t) +\n'</button>\\n      <button class=\"btn btn-danger\" ref=\"removeButton\">' +\n((__t = (ctx.t('Remove'))) == null ? '' : __t) +\n'</button>\\n    </div>\\n  </div>\\n  ';\n } ;\n__p += '\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/builderEditForm/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/builderEditForm/index.js":
+/*!******************************************************!*\
+  !*** ./lib/templates/bulma/builderEditForm/index.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/builderEditForm/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/builderEditForm/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/builderPlaceholder/form.ejs.js":
+/*!************************************************************!*\
+  !*** ./lib/templates/bulma/builderPlaceholder/form.ejs.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += '<div\\n  class=\"drag-and-drop-alert alert alert-info no-drag\"\\n  style=\"text-align:center;\"\\n  role=\"alert\"\\n  data-noattach=\"true\"\\n  data-position=\"' +\n((__t = (ctx.position)) == null ? '' : __t) +\n'\"\\n>\\n  ' +\n((__t = (ctx.t('Drag and Drop a form component'))) == null ? '' : __t) +\n'\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/builderPlaceholder/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/builderPlaceholder/index.js":
+/*!*********************************************************!*\
+  !*** ./lib/templates/bulma/builderPlaceholder/index.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/builderPlaceholder/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/builderPlaceholder/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/builderSidebar/form.ejs.js":
+/*!********************************************************!*\
+  !*** ./lib/templates/bulma/builderSidebar/form.ejs.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<div id=\"' +\n((__t = (ctx.groupId)) == null ? '' : __t) +\n'\" class=\"accordion builder-sidebar' +\n((__t = (ctx.scrollEnabled ? ' builder-sidebar_scroll' : '')) == null ? '' : __t) +\n'\" ref=\"sidebar\">\\n  ';\n ctx.groups.forEach(function(group) { ;\n__p += '\\n    ' +\n((__t = ( group )) == null ? '' : __t) +\n'\\n  ';\n }) ;\n__p += '\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/builderSidebar/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/builderSidebar/index.js":
+/*!*****************************************************!*\
+  !*** ./lib/templates/bulma/builderSidebar/index.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/builderSidebar/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/builderSidebar/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/builderSidebarGroup/form.ejs.js":
+/*!*************************************************************!*\
+  !*** ./lib/templates/bulma/builderSidebarGroup/form.ejs.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<div class=\"card form-builder-panel\" ref=\"group-panel-' +\n((__t = (ctx.groupKey)) == null ? '' : __t) +\n'\">\\n  <div class=\"card-header form-builder-group-header\" id=\"heading-' +\n((__t = (ctx.groupKey)) == null ? '' : __t) +\n'\">\\n    <h5 class=\"mb-0 mt-0\">\\n      <button\\n        class=\"btn btn-block builder-group-button\"\\n        type=\"button\"\\n        data-toggle=\"collapse\"\\n        data-target=\"#group-' +\n((__t = (ctx.groupKey)) == null ? '' : __t) +\n'\"\\n        data-parent=\"#' +\n((__t = (ctx.groupId)) == null ? '' : __t) +\n'\"\\n        aria-expanded=\"' +\n((__t = (ctx.group.default)) == null ? '' : __t) +\n'\"\\n        aria-controls=\"group-' +\n((__t = (ctx.groupKey)) == null ? '' : __t) +\n'\"\\n        ref=\"sidebar-anchor\"\\n      >\\n        ' +\n((__t = (ctx.t(ctx.group.title))) == null ? '' : __t) +\n'\\n      </button>\\n    </h5>\\n  </div>\\n  <div\\n    id=\"group-' +\n((__t = (ctx.groupKey)) == null ? '' : __t) +\n'\"\\n    class=\"collapse ' +\n((__t = (ctx.group.default ? ' show' : '')) == null ? '' : __t) +\n'\"\\n    data-parent=\"#' +\n((__t = (ctx.groupId)) == null ? '' : __t) +\n'\"\\n    data-default=\"' +\n((__t = (ctx.group.default)) == null ? '' : __t) +\n'\"\\n    aria-labelledby=\"heading-' +\n((__t = (ctx.groupKey)) == null ? '' : __t) +\n'\"\\n    ref=\"sidebar-group\"\\n  >\\n    <div id=\"group-container-' +\n((__t = (ctx.groupKey)) == null ? '' : __t) +\n'\" class=\"card-body no-drop p-2\" ref=\"sidebar-container\">\\n      ';\n !ctx.group.componentOrder || ctx.group.componentOrder.forEach(function(componentKey) { ;\n__p += '\\n      <span\\n        data-group=\"' +\n((__t = (ctx.groupKey)) == null ? '' : __t) +\n'\"\\n        data-key=\"' +\n((__t = (ctx.group.components[componentKey].key)) == null ? '' : __t) +\n'\"\\n        data-type=\"' +\n((__t = (ctx.group.components[componentKey].schema.type)) == null ? '' : __t) +\n'\"\\n        class=\"btn btn-primary btn-sm btn-block formcomponent drag-copy\"\\n      >\\n        ';\n if (ctx.group.components[componentKey].icon) { ;\n__p += '\\n          <i class=\"' +\n((__t = (ctx.iconClass(ctx.group.components[componentKey].icon))) == null ? '' : __t) +\n'\" style=\"margin-right: 5px;\"></i>\\n        ';\n } ;\n__p += '\\n        ' +\n((__t = (ctx.t(ctx.group.components[componentKey].title))) == null ? '' : __t) +\n'\\n        </span>\\n      ';\n }) ;\n__p += '\\n      ' +\n((__t = (ctx.subgroups.join(''))) == null ? '' : __t) +\n'\\n    </div>\\n  </div>\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/builderSidebarGroup/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/builderSidebarGroup/index.js":
+/*!**********************************************************!*\
+  !*** ./lib/templates/bulma/builderSidebarGroup/index.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/builderSidebarGroup/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/builderSidebarGroup/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/builderWizard/form.ejs.js":
+/*!*******************************************************!*\
+  !*** ./lib/templates/bulma/builderWizard/form.ejs.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<div class=\"formio builder row formbuilder\">\\n  <div class=\"col-xs-4 col-sm-3 col-md-2 formcomponents\">\\n    ' +\n((__t = (ctx.sidebar)) == null ? '' : __t) +\n'\\n  </div>\\n  <div class=\"col-xs-8 col-sm-9 col-md-10 formarea\">\\n    <ol class=\"breadcrumb\">\\n      ';\n ctx.pages.forEach(function(page, pageIndex) { ;\n__p += '\\n      <li>\\n        <span title=\"' +\n((__t = (page.title)) == null ? '' : __t) +\n'\" class=\"mr-2 badge ';\n if (pageIndex === ctx.self.currentPage) { ;\n__p += 'badge-primary';\n } else { ;\n__p += 'badge-info';\n } ;\n__p += ' wizard-page-label\" ref=\"gotoPage\">' +\n((__t = (page.title)) == null ? '' : __t) +\n'</span>\\n      </li>\\n      ';\n }) ;\n__p += '\\n      <li>\\n        <span title=\"' +\n((__t = (ctx.t('Create Page'))) == null ? '' : __t) +\n'\" class=\"mr-2 badge badge-success wizard-page-label\" ref=\"addPage\">\\n          <i class=\"' +\n((__t = (ctx.iconClass('plus'))) == null ? '' : __t) +\n'\"></i> ' +\n((__t = (ctx.t('Page'))) == null ? '' : __t) +\n'\\n        </span>\\n      </li>\\n    </ol>\\n    <div ref=\"form\">\\n      ' +\n((__t = (ctx.form)) == null ? '' : __t) +\n'\\n    </div>\\n  </div>\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/builderWizard/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/builderWizard/index.js":
+/*!****************************************************!*\
+  !*** ./lib/templates/bulma/builderWizard/index.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/builderWizard/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/builderWizard/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/button/form.ejs.js":
+/*!************************************************!*\
+  !*** ./lib/templates/bulma/button/form.ejs.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<' +\n((__t = (ctx.input.type)) == null ? '' : __t) +\n'\\n  ref=\"button\"\\n  class=\"button is-link\"\\n  ';\n for (var attr in ctx.input.attr) { ;\n__p += '\\n  ' +\n((__t = (attr)) == null ? '' : __t) +\n'=\"' +\n((__t = (ctx.input.attr[attr])) == null ? '' : __t) +\n'\"\\n  ';\n } ;\n__p += '\\n>\\n';\n if (ctx.component.leftIcon) { ;\n__p += '<span class=\"' +\n((__t = (ctx.component.leftIcon)) == null ? '' : __t) +\n'\"></span>&nbsp;';\n } ;\n__p += '\\n' +\n((__t = (ctx.input.content)) == null ? '' : __t) +\n'\\n';\n if (ctx.component.tooltip) { ;\n__p += '\\n  <i ref=\"tooltip\" class=\"' +\n((__t = (ctx.iconClass('question-sign'))) == null ? '' : __t) +\n' text-muted\"></i>\\n';\n } ;\n__p += '\\n';\n if (ctx.component.rightIcon) { ;\n__p += '&nbsp;<span class=\"' +\n((__t = (ctx.component.rightIcon)) == null ? '' : __t) +\n'\"></span>';\n } ;\n__p += '\\n</' +\n((__t = (ctx.input.type)) == null ? '' : __t) +\n'>\\n<div ref=\"buttonMessageContainer\">\\n  <span class=\"help-block\" ref=\"buttonMessage\"></span>\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/button/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/button/html.ejs.js":
+/*!************************************************!*\
+  !*** ./lib/templates/bulma/button/html.ejs.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += '\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/button/html.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/button/index.js":
+/*!*********************************************!*\
+  !*** ./lib/templates/bulma/button/index.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/button/form.ejs.js\"));\n\nvar _html = _interopRequireDefault(__webpack_require__(/*! ./html.ejs */ \"./lib/templates/bulma/button/html.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default,\n  html: _html.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/button/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/checkbox/form.ejs.js":
+/*!**************************************************!*\
+  !*** ./lib/templates/bulma/checkbox/form.ejs.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<div class=\\'field\\'>\\n  <div class=\\'control\\'>\\n    <label class=\"' +\n((__t = (ctx.input.labelClass)) == null ? '' : __t) +\n' checkbox\">\\n      <' +\n((__t = (ctx.input.type)) == null ? '' : __t) +\n'\\n        ref=\"input\"\\n        class=\\'checkbox\\'\\n        ';\n for (var attr in ctx.input.attr) { ;\n__p += '\\n        ' +\n((__t = (attr)) == null ? '' : __t) +\n'=\"' +\n((__t = (ctx.input.attr[attr])) == null ? '' : __t) +\n'\"\\n        ';\n } ;\n__p += '\\n        ';\n if (ctx.checked) { ;\n__p += 'checked=true';\n } ;\n__p += '\\n        >\\n      ';\n if (!ctx.self.labelIsHidden()) { ;\n__p +=\n((__t = (ctx.input.label)) == null ? '' : __t);\n } ;\n__p += '\\n      ';\n if (ctx.component.tooltip) { ;\n__p += '\\n        <i ref=\"tooltip\" class=\"' +\n((__t = (ctx.iconClass('question-sign'))) == null ? '' : __t) +\n' text-muted\"></i>\\n      ';\n } ;\n__p += '\\n      ' +\n((__t = (ctx.input.content)) == null ? '' : __t) +\n'\\n      </' +\n((__t = (ctx.input.type)) == null ? '' : __t) +\n'>\\n    </label>\\n  </div>\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/checkbox/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/checkbox/html.ejs.js":
+/*!**************************************************!*\
+  !*** ./lib/templates/bulma/checkbox/html.ejs.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<label class=\"' +\n((__t = (ctx.input.labelClass)) == null ? '' : __t) +\n'\">\\n    ' +\n((__t = (ctx.input.content)) == null ? '' : __t) +\n'\\n    ';\n if (!ctx.self.labelIsHidden()) { ;\n__p += '<span>' +\n((__t = (ctx.input.label)) == null ? '' : __t) +\n'</span>';\n } ;\n__p += '\\n</label>\\n<div ref=\"value\">';\n if (ctx.checked) { ;\n__p += 'True';\n } else { ;\n__p += 'False';\n } ;\n__p += '</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/checkbox/html.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/checkbox/index.js":
+/*!***********************************************!*\
+  !*** ./lib/templates/bulma/checkbox/index.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/checkbox/form.ejs.js\"));\n\nvar _html = _interopRequireDefault(__webpack_require__(/*! ./html.ejs */ \"./lib/templates/bulma/checkbox/html.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default,\n  html: _html.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/checkbox/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/columns/form.ejs.js":
+/*!*************************************************!*\
+  !*** ./lib/templates/bulma/columns/form.ejs.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n\n ctx.component.columns.forEach(function(column, index) { ;\n__p += '\\n<div class=\"\\n    column\\n    is-' +\n((__t = (column.width)) == null ? '' : __t) +\n'\\n    is-offset-' +\n((__t = (column.offset)) == null ? '' : __t) +\n'\\n  \" ref=\"' +\n((__t = (ctx.columnKey)) == null ? '' : __t) +\n'\">\\n  ' +\n((__t = (ctx.columnComponents[index])) == null ? '' : __t) +\n'\\n</div>\\n';\n }) ;\n__p += '\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/columns/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/columns/index.js":
+/*!**********************************************!*\
+  !*** ./lib/templates/bulma/columns/index.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/columns/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/columns/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/component/form.ejs.js":
+/*!***************************************************!*\
+  !*** ./lib/templates/bulma/component/form.ejs.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<div id=\"' +\n((__t = (ctx.id)) == null ? '' : __t) +\n'\"\\n     ';\n if (ctx.classes.split(' ')[0] == 'row') { ;\n__p += ' class = \"' +\n((__t = (ctx.classes.replace(/row/g, 'columns'))) == null ? '' : __t) +\n'\" ';\n } ;\n__p += '\\n     ';\n if (ctx.styles) { ;\n__p += ' styles=\\'' +\n((__t = (ctx.styles)) == null ? '' : __t) +\n'\\'';\n } ;\n__p += '\\n     ref=\\'component\\' >\\n    ';\n if (ctx.visible) { ;\n__p += '\\n    ' +\n((__t = (ctx.children)) == null ? '' : __t) +\n'\\n  <p ref=\"messageContainer\" class=\"help is-danger\"></p>\\n  ';\n } ;\n__p += '\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/component/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/component/index.js":
+/*!************************************************!*\
+  !*** ./lib/templates/bulma/component/index.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/component/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/component/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/components/form.ejs.js":
+/*!****************************************************!*\
+  !*** ./lib/templates/bulma/components/form.ejs.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p +=\n((__t = ( ctx.children.join('') )) == null ? '' : __t) +\n'\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/components/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/components/index.js":
+/*!*************************************************!*\
+  !*** ./lib/templates/bulma/components/index.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/components/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/components/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/container/form.ejs.js":
+/*!***************************************************!*\
+  !*** ./lib/templates/bulma/container/form.ejs.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += '<div ref=\"' +\n((__t = (ctx.nestedKey)) == null ? '' : __t) +\n'\">\\n  ' +\n((__t = (ctx.children)) == null ? '' : __t) +\n'\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/container/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/container/index.js":
+/*!************************************************!*\
+  !*** ./lib/templates/bulma/container/index.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/container/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/container/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/cssClasses.js":
+/*!*******************************************!*\
+  !*** ./lib/templates/bulma/cssClasses.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\nvar _default = {\n  'border-default': '',\n  'formio-tab-panel-active': 'active',\n  'formio-tab-link-active': 'active',\n  'formio-tab-link-container-active': 'active'\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/cssClasses.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/datagrid/form.ejs.js":
+/*!**************************************************!*\
+  !*** ./lib/templates/bulma/datagrid/form.ejs.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<table class=\"table datagrid-table table-bordered\\n    ' +\n((__t = ( ctx.component.striped ? 'table-striped' : '')) == null ? '' : __t) +\n'\\n    ' +\n((__t = ( ctx.component.hover ? 'table-hover' : '')) == null ? '' : __t) +\n'\\n    ' +\n((__t = ( ctx.component.condensed ? 'table-sm' : '')) == null ? '' : __t) +\n'\\n    \" ';\n if (ctx.component.layoutFixed) { ;\n__p += 'style=\"table-layout: fixed;\"';\n } ;\n__p += '>\\n  ';\n if (ctx.hasHeader) { ;\n__p += '\\n  <thead>\\n    <tr>\\n      ';\n if (ctx.component.reorder) { ;\n__p += '<th></th>';\n } ;\n__p += '\\n      ';\n ctx.columns.forEach(function(col) { ;\n__p += '\\n      ';\n if (ctx.builder || ctx.visibleColumns[col.key]) { ;\n__p += '\\n      <th class=\"' +\n((__t = (col.validate && col.validate.required ? 'field-required' : '')) == null ? '' : __t) +\n'\">\\n        ' +\n((__t = ( col.hideLabel ? '' : ctx.t(col.label || col.title) )) == null ? '' : __t) +\n'\\n        ';\n if (col.tooltip) { ;\n__p += ' <i ref=\"tooltip\" class=\"' +\n((__t = (ctx.iconClass('question-sign'))) == null ? '' : __t) +\n' text-muted\"></i>';\n } ;\n__p += '\\n      </th>\\n      ';\n } ;\n__p += '\\n      ';\n }) ;\n__p += '\\n      ';\n if (ctx.hasExtraColumn) { ;\n__p += '\\n      <th>\\n        ';\n if (!ctx.builder && ctx.hasAddButton && ctx.hasTopSubmit) { ;\n__p += '\\n        <button class=\"btn btn-primary formio-button-add-row\" ref=\"' +\n((__t = (ctx.datagridKey)) == null ? '' : __t) +\n'-addRow\">\\n          <i class=\"' +\n((__t = (ctx.iconClass('plus'))) == null ? '' : __t) +\n'\"></i>' +\n((__t = (ctx.t('Add Another'))) == null ? '' : __t) +\n'\\n        </button>\\n        ';\n } ;\n__p += '\\n      </th>\\n      ';\n } ;\n__p += '\\n    </tr>\\n  </thead>\\n  ';\n } ;\n__p += '\\n  <tbody ref=\"' +\n((__t = (ctx.datagridKey)) == null ? '' : __t) +\n'-tbody\">\\n    ';\n ctx.rows.forEach(function(row, index) { ;\n__p += '\\n    ';\n if (ctx.hasGroups && ctx.groups[index]) { ;\n__p += '\\n    <tr ref=\"' +\n((__t = (ctx.datagridKey)) == null ? '' : __t) +\n'-group-header\" class=\"datagrid-group-header' +\n((__t = (ctx.hasToggle ? ' clickable' : '')) == null ? '' : __t) +\n'\">\\n      <td\\n        ref=\"' +\n((__t = (ctx.datagridKey)) == null ? '' : __t) +\n'-group-label\"\\n        colspan=\"' +\n((__t = (ctx.numColumns)) == null ? '' : __t) +\n'\"\\n        class=\"datagrid-group-label\">' +\n((__t = (ctx.groups[index].label)) == null ? '' : __t) +\n'</td>\\n    </tr>\\n    ';\n } ;\n__p += '\\n    <tr ref=\"' +\n((__t = (ctx.datagridKey)) == null ? '' : __t) +\n'-row\">\\n      ';\n if (ctx.component.reorder) { ;\n__p += '\\n        <td>\\n          <button type=\"button\" class=\"button\"></button>\\n        </td>\\n      ';\n } ;\n__p += '\\n      ';\n ctx.columns.forEach(function(col) { ;\n__p += '\\n      ';\n if (ctx.builder || ctx.visibleColumns[col.key]) { ;\n__p += '\\n      <td ref=\"' +\n((__t = (ctx.datagridKey)) == null ? '' : __t) +\n'\">\\n        ' +\n((__t = (row[col.key])) == null ? '' : __t) +\n'\\n      </td>\\n      ';\n } ;\n__p += '\\n      ';\n }) ;\n__p += '\\n      ';\n if (ctx.hasExtraColumn) { ;\n__p += '\\n        ';\n if (!ctx.builder && ctx.hasRemoveButtons) { ;\n__p += '\\n        <td>\\n          <button type=\"button\" class=\"button is-danger\" ref=\"' +\n((__t = (ctx.datagridKey)) == null ? '' : __t) +\n'-removeRow\">\\n            <i class=\"' +\n((__t = (ctx.iconClass('remove-circle'))) == null ? '' : __t) +\n'\"></i>\\n          </button>\\n        </td>\\n        ';\n } ;\n__p += '\\n        ';\n if (ctx.builder) { ;\n__p += '\\n        <td ref=\"' +\n((__t = (ctx.key)) == null ? '' : __t) +\n'-container\">\\n          ' +\n((__t = (ctx.placeholder)) == null ? '' : __t) +\n'\\n        </td>\\n        ';\n } ;\n__p += '\\n      ';\n } ;\n__p += '\\n    </tr>\\n    ';\n }) ;\n__p += '\\n  </tbody>\\n  ';\n if (!ctx.builder && ctx.hasAddButton && ctx.hasBottomSubmit) { ;\n__p += '\\n  <tfoot>\\n    <tr>\\n      <td colspan=\"' +\n((__t = (ctx.numColumns + 1)) == null ? '' : __t) +\n'\">\\n        <button class=\"button is-primary\" ref=\"' +\n((__t = (ctx.datagridKey)) == null ? '' : __t) +\n'-addRow\">\\n          <i class=\"' +\n((__t = (ctx.iconClass('plus'))) == null ? '' : __t) +\n'\"></i> ' +\n((__t = (ctx.t(ctx.component.addAnother || '  &nbsp; Add Another'))) == null ? '' : __t) +\n'\\n        </button>\\n      </td>\\n    </tr>\\n  </tfoot>\\n  ';\n } ;\n__p += '\\n</table>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/datagrid/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/datagrid/html.ejs.js":
+/*!**************************************************!*\
+  !*** ./lib/templates/bulma/datagrid/html.ejs.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<table class=\"table datagrid-table table-bordered\\n    ' +\n((__t = ( ctx.component.striped ? 'table-striped' : '')) == null ? '' : __t) +\n'\\n    ' +\n((__t = ( ctx.component.hover ? 'table-hover' : '')) == null ? '' : __t) +\n'\\n    ' +\n((__t = ( ctx.component.condensed ? 'table-sm' : '')) == null ? '' : __t) +\n'\\n    \">\\n  ';\n if (ctx.hasHeader) { ;\n__p += '\\n  <thead>\\n    <tr>\\n      ';\n ctx.columns.forEach(function(col) { ;\n__p += '\\n      ';\n if (ctx.visibleColumns[col.key]) { ;\n__p += '\\n      <th class=\"' +\n((__t = (col.validate && col.validate.required ? 'field-required' : '')) == null ? '' : __t) +\n'\">\\n        ' +\n((__t = ( col.hideLabel ? '' : ctx.t(col.label || col.title) )) == null ? '' : __t) +\n'\\n        ';\n if (col.tooltip) { ;\n__p += ' <i ref=\"tooltip\" class=\"' +\n((__t = (ctx.iconClass('question-sign'))) == null ? '' : __t) +\n' text-muted\"></i>';\n } ;\n__p += '\\n      </th>\\n      ';\n } ;\n__p += '\\n      ';\n }) ;\n__p += '\\n    </tr>\\n  </thead>\\n  ';\n } ;\n__p += '\\n  <tbody>\\n    ';\n ctx.rows.forEach(function(row) { ;\n__p += '\\n    <tr>\\n      ';\n ctx.columns.forEach(function(col) { ;\n__p += '\\n      ';\n if (ctx.visibleColumns[col.key]) { ;\n__p += '\\n      <td ref=\"' +\n((__t = (ctx.datagridKey)) == null ? '' : __t) +\n'\">\\n        ' +\n((__t = (row[col.key])) == null ? '' : __t) +\n'\\n      </td>\\n      ';\n } ;\n__p += '\\n      ';\n }) ;\n__p += '\\n    </tr>\\n    ';\n }) ;\n__p += '\\n  </tbody>\\n</table>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/datagrid/html.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/datagrid/index.js":
+/*!***********************************************!*\
+  !*** ./lib/templates/bulma/datagrid/index.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/datagrid/form.ejs.js\"));\n\nvar _html = _interopRequireDefault(__webpack_require__(/*! ./html.ejs */ \"./lib/templates/bulma/datagrid/html.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default,\n  html: _html.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/datagrid/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/day/form.ejs.js":
+/*!*********************************************!*\
+  !*** ./lib/templates/bulma/day/form.ejs.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<div class=\"row\">\\n  ';\n if (ctx.dayFirst && ctx.showDay) { ;\n__p += '\\n  <div class=\"col col-xs-3\">\\n    ';\n if (!ctx.component.hideInputLabels) { ;\n__p += '\\n    <label for=\"' +\n((__t = (ctx.component.key)) == null ? '' : __t) +\n'-day\" class=\"';\n if(ctx.component.fields.day.required) { ;\n__p += 'field-required';\n } ;\n__p += '\">' +\n((__t = (ctx.t('Day'))) == null ? '' : __t) +\n'</label>\\n    ';\n } ;\n__p += '\\n    <div>' +\n((__t = (ctx.day)) == null ? '' : __t) +\n'</div>\\n  </div>\\n  ';\n } ;\n__p += '\\n  ';\n if (ctx.showMonth) { ;\n__p += '\\n  <div class=\"col col-xs-4\">\\n    ';\n if (!ctx.component.hideInputLabels) { ;\n__p += '\\n    <label for=\"' +\n((__t = (ctx.component.key)) == null ? '' : __t) +\n'-month\" class=\"';\n if(ctx.component.fields.month.required) { ;\n__p += 'field-required';\n } ;\n__p += '\">' +\n((__t = (ctx.t('Month'))) == null ? '' : __t) +\n'</label>\\n    ';\n } ;\n__p += '\\n    <div>' +\n((__t = (ctx.month)) == null ? '' : __t) +\n'</div>\\n  </div>\\n  ';\n } ;\n__p += '\\n  ';\n if (!ctx.dayFirst && ctx.showDay) { ;\n__p += '\\n  <div class=\"col col-xs-3\">\\n    ';\n if (!ctx.component.hideInputLabels) { ;\n__p += '\\n    <label for=\"' +\n((__t = (ctx.component.key)) == null ? '' : __t) +\n'-day\" class=\"';\n if(ctx.component.fields.day.required) { ;\n__p += 'field-required';\n } ;\n__p += '\">' +\n((__t = (ctx.t('Day'))) == null ? '' : __t) +\n'</label>\\n    ';\n } ;\n__p += '\\n    <div>' +\n((__t = (ctx.day)) == null ? '' : __t) +\n'</div>\\n  </div>\\n  ';\n } ;\n__p += '\\n  ';\n if (ctx.showYear) { ;\n__p += '\\n  <div class=\"col col-xs-5\">\\n    ';\n if (!ctx.component.hideInputLabels) { ;\n__p += '\\n    <label for=\"' +\n((__t = (ctx.component.key)) == null ? '' : __t) +\n'-year\" class=\"';\n if(ctx.component.fields.year.required) { ;\n__p += 'field-required';\n } ;\n__p += '\">' +\n((__t = (ctx.t('Year'))) == null ? '' : __t) +\n'</label>\\n    ';\n } ;\n__p += '\\n    <div>' +\n((__t = (ctx.year)) == null ? '' : __t) +\n'</div>\\n  </div>\\n  ';\n } ;\n__p += '\\n</div>\\n<input name=\"ctx.data[day]\" type=\"hidden\" class=\"form-control\" lang=\"en\" value=\"\" ref=\"input\">\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/day/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/day/index.js":
+/*!******************************************!*\
+  !*** ./lib/templates/bulma/day/index.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/day/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/day/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/dialog/form.ejs.js":
+/*!************************************************!*\
+  !*** ./lib/templates/bulma/dialog/form.ejs.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += '<div class=\"formio-dialog formio-dialog-theme-default component-settings\">\\n  <div class=\"formio-dialog-overlay\" ref=\"dialogOverlay\"></div>\\n  <div class=\"formio-dialog-content\" ref=\"dialogContents\">\\n    <div ref=\"dialogContents\"></div>\\n    <button class=\"formio-dialog-close float-right btn btn-secondary btn-sm\" aria-label=\"close\" ref=\"dialogClose\"></button>\\n  </div>\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/dialog/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/dialog/index.js":
+/*!*********************************************!*\
+  !*** ./lib/templates/bulma/dialog/index.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/dialog/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/dialog/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/editgrid/form.ejs.js":
+/*!**************************************************!*\
+  !*** ./lib/templates/bulma/editgrid/form.ejs.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<ul class=\"editgrid-listgroup list-group\\n    ' +\n((__t = ( ctx.component.striped ? 'table-striped' : '')) == null ? '' : __t) +\n'\\n    ' +\n((__t = ( ctx.component.bordered ? 'table-bordered' : '')) == null ? '' : __t) +\n'\\n    ' +\n((__t = ( ctx.component.hover ? 'table-hover' : '')) == null ? '' : __t) +\n'\\n    ' +\n((__t = ( ctx.component.condensed ? 'table-sm' : '')) == null ? '' : __t) +\n'\\n    \">\\n  ';\n if (ctx.header) { ;\n__p += '\\n  <li class=\"list-group-item list-group-header\">\\n    ' +\n((__t = (ctx.header)) == null ? '' : __t) +\n'\\n  </li>\\n  ';\n } ;\n__p += '\\n  ';\n ctx.rows.forEach(function(row, rowIndex) { ;\n__p += '\\n  <li class=\"list-group-item\" ref=\"' +\n((__t = (ctx.editgridKey)) == null ? '' : __t) +\n'\">\\n    ' +\n((__t = (row)) == null ? '' : __t) +\n'\\n    ';\n if (ctx.openRows[rowIndex] && !ctx.readOnly) { ;\n__p += '\\n    <div class=\"editgrid-actions\">\\n      <button class=\"btn btn-primary\" ref=\"' +\n((__t = (ctx.editgridKey)) == null ? '' : __t) +\n'-saveRow\">' +\n((__t = (ctx.t(ctx.component.saveRow || 'Save'))) == null ? '' : __t) +\n'</button>\\n      ';\n if (ctx.component.removeRow) { ;\n__p += '\\n      <button class=\"btn btn-danger\" ref=\"' +\n((__t = (ctx.editgridKey)) == null ? '' : __t) +\n'-cancelRow\">' +\n((__t = (ctx.t(ctx.component.removeRow || 'Cancel'))) == null ? '' : __t) +\n'</button>\\n      ';\n } ;\n__p += '\\n    </div>\\n    ';\n } ;\n__p += '\\n    <div class=\"has-error\">\\n      <div class=\"editgrid-row-error help-block\">\\n        ' +\n((__t = (ctx.errors[rowIndex])) == null ? '' : __t) +\n'\\n      </div>\\n    </div>\\n  </li>\\n  ';\n }) ;\n__p += '\\n  ';\n if (ctx.footer) { ;\n__p += '\\n  <li class=\"list-group-item list-group-footer\">\\n    ' +\n((__t = (ctx.footer)) == null ? '' : __t) +\n'\\n  </li>\\n  ';\n } ;\n__p += '\\n</ul>\\n';\n if (!ctx.readOnly && ctx.hasAddButton) { ;\n__p += '\\n<button class=\"btn btn-primary\" ref=\"' +\n((__t = (ctx.editgridKey)) == null ? '' : __t) +\n'-addRow\">\\n  <i class=\"' +\n((__t = (ctx.iconClass('plus'))) == null ? '' : __t) +\n'\"></i> ' +\n((__t = (ctx.t(ctx.component.addAnother || 'Add Another'))) == null ? '' : __t) +\n'\\n</button>\\n';\n } ;\n__p += '\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/editgrid/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/editgrid/html.ejs.js":
+/*!**************************************************!*\
+  !*** ./lib/templates/bulma/editgrid/html.ejs.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<ul class=\"editgrid-listgroup list-group\\n    ' +\n((__t = ( ctx.component.striped ? 'table-striped' : '')) == null ? '' : __t) +\n'\\n    ' +\n((__t = ( ctx.component.bordered ? 'table-bordered' : '')) == null ? '' : __t) +\n'\\n    ' +\n((__t = ( ctx.component.hover ? 'table-hover' : '')) == null ? '' : __t) +\n'\\n    ' +\n((__t = ( ctx.component.condensed ? 'table-sm' : '')) == null ? '' : __t) +\n'\\n    \">\\n  ';\n if (ctx.header) { ;\n__p += '\\n  <li class=\"list-group-item list-group-header\">\\n    ' +\n((__t = (ctx.header)) == null ? '' : __t) +\n'\\n  </li>\\n  ';\n } ;\n__p += '\\n  ';\n ctx.rows.forEach(function(row, rowIndex) { ;\n__p += '\\n  <li class=\"list-group-item\" ref=\"' +\n((__t = (ctx.editgridKey)) == null ? '' : __t) +\n'\">\\n    ' +\n((__t = (row)) == null ? '' : __t) +\n'\\n    ';\n if (ctx.openRows[rowIndex] && !ctx.readOnly) { ;\n__p += '\\n    <div class=\"editgrid-actions\">\\n      <button class=\"btn btn-primary\" ref=\"' +\n((__t = (ctx.editgridKey)) == null ? '' : __t) +\n'-saveRow\">' +\n((__t = (ctx.t(ctx.component.saveRow || 'Save'))) == null ? '' : __t) +\n'</button>\\n      ';\n if (ctx.component.removeRow) { ;\n__p += '\\n      <button class=\"btn btn-danger\" ref=\"' +\n((__t = (ctx.editgridKey)) == null ? '' : __t) +\n'-cancelRow\">' +\n((__t = (ctx.t(ctx.component.removeRow || 'Cancel'))) == null ? '' : __t) +\n'</button>\\n      ';\n } ;\n__p += '\\n    </div>\\n    ';\n } ;\n__p += '\\n    <div class=\"has-error\">\\n      <div class=\"editgrid-row-error help-block\">\\n        ' +\n((__t = (ctx.errors[rowIndex])) == null ? '' : __t) +\n'\\n      </div>\\n    </div>\\n  </li>\\n  ';\n }) ;\n__p += '\\n  ';\n if (ctx.footer) { ;\n__p += '\\n  <li class=\"list-group-item list-group-footer\">\\n    ' +\n((__t = (ctx.footer)) == null ? '' : __t) +\n'\\n  </li>\\n  ';\n } ;\n__p += '\\n</ul>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/editgrid/html.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/editgrid/index.js":
+/*!***********************************************!*\
+  !*** ./lib/templates/bulma/editgrid/index.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/editgrid/form.ejs.js\"));\n\nvar _html = _interopRequireDefault(__webpack_require__(/*! ./html.ejs */ \"./lib/templates/bulma/editgrid/html.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default,\n  html: _html.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/editgrid/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/field/form.ejs.js":
+/*!***********************************************!*\
+  !*** ./lib/templates/bulma/field/form.ejs.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '\\n  ';\n if (!ctx.label.hidden && ctx.label.labelPosition !== 'bottom') { ;\n__p += '\\n    ' +\n((__t = ( ctx.render('label', ctx) )) == null ? '' : __t) +\n'\\n  ';\n } ;\n__p += '\\n  ' +\n((__t = (ctx.element)) == null ? '' : __t) +\n'\\n  ';\n if (!ctx.label.hidden && ctx.label.labelPosition === 'bottom') { ;\n__p += '\\n    <label class=\"' +\n((__t = (ctx.label.className)) == null ? '' : __t) +\n'\">' +\n((__t = (ctx.t(ctx.component.label))) == null ? '' : __t) +\n'\\n    ';\n if (ctx.component.tooltip) { ;\n__p += '\\n      <i ref=\"tooltip\" class=\"' +\n((__t = (ctx.iconClass('question-sign'))) == null ? '' : __t) +\n' text-muted\"></i>\\n    ';\n } ;\n__p += '\\n    </label>\\n  ';\n } ;\n__p += '\\n  ';\n if (ctx.component.description) { ;\n__p += '\\n    <p class=\"help\">' +\n((__t = (ctx.t(ctx.component.description))) == null ? '' : __t) +\n'</p>\\n  ';\n } ;\n__p += '\\n\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/field/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/field/index.js":
+/*!********************************************!*\
+  !*** ./lib/templates/bulma/field/index.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/field/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/field/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/fieldset/form.ejs.js":
+/*!**************************************************!*\
+  !*** ./lib/templates/bulma/fieldset/form.ejs.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<fieldset>\\n  ';\n if (ctx.component.legend) { ;\n__p += '\\n  <legend ref=\"header\" class=\"' +\n((__t = (ctx.component.collapsible ? 'formio-clickable' : '')) == null ? '' : __t) +\n'\">\\n    ' +\n((__t = (ctx.t(ctx.component.legend))) == null ? '' : __t) +\n'\\n    ';\n if (ctx.component.tooltip) { ;\n__p += '\\n      <i ref=\"tooltip\" class=\"' +\n((__t = (ctx.iconClass('question-sign'))) == null ? '' : __t) +\n' text-muted\"></i>\\n    ';\n } ;\n__p += '\\n  </legend>\\n  ';\n } ;\n__p += '\\n  ';\n if (!ctx.collapsed) { ;\n__p += '\\n  <div class=\"fieldset-body\" ref=\"' +\n((__t = (ctx.nestedKey)) == null ? '' : __t) +\n'\">\\n    ' +\n((__t = (ctx.children)) == null ? '' : __t) +\n'\\n  </div>\\n  ';\n } ;\n__p += '\\n</fieldset>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/fieldset/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/fieldset/index.js":
+/*!***********************************************!*\
+  !*** ./lib/templates/bulma/fieldset/index.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/fieldset/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/fieldset/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/file/form.ejs.js":
+/*!**********************************************!*\
+  !*** ./lib/templates/bulma/file/form.ejs.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n\n if (!ctx.component.image) { ;\n__p += '\\n<ul class=\"list-group list-group-striped\">\\n  <li class=\"list-group-item list-group-header hidden-xs hidden-sm\">\\n    <div class=\"row\">\\n      ';\n if (!ctx.disabled) { ;\n__p += '\\n      <div class=\"col-md-1\"></div>\\n      ';\n } ;\n__p += '\\n      <div class=\"col-md-';\n if (ctx.self.hasTypes) { ;\n__p += '7';\n } else { ;\n__p += '9';\n } ;\n__p += '\"><strong>' +\n((__t = (ctx.t('File Name'))) == null ? '' : __t) +\n'</strong></div>\\n      <div class=\"col-md-2\"><strong>' +\n((__t = (ctx.t('Size'))) == null ? '' : __t) +\n'</strong></div>\\n      ';\n if (ctx.self.hasTypes) { ;\n__p += '\\n        <div class=\"col-md-2\"><strong>' +\n((__t = (ctx.t('Type'))) == null ? '' : __t) +\n'</strong></div>\\n      ';\n } ;\n__p += '\\n    </div>\\n  </li>\\n  ';\n ctx.files.forEach(function(file) { ;\n__p += '\\n  <li class=\"list-group-item\">\\n    <div class=\"row\">\\n      ';\n if (!ctx.disabled) { ;\n__p += '\\n      <div class=\"col-md-1\"><i class=\"' +\n((__t = (ctx.iconClass('remove'))) == null ? '' : __t) +\n'\" ref=\"removeLink\"></i></div>\\n      ';\n } ;\n__p += '\\n      <div class=\"col-md-';\n if (ctx.self.hasTypes) { ;\n__p += '7';\n } else { ;\n__p += '9';\n } ;\n__p += '\">\\n        ';\n if (ctx.component.uploadOnly) { ;\n__p += '\\n          ' +\n((__t = (file.originalName || file.name)) == null ? '' : __t) +\n'\\n        ';\n } else { ;\n__p += '\\n          <a href=\"' +\n((__t = (file.url)) == null ? '' : __t) +\n'\" target=\"_blank\" ref=\"fileLink\">' +\n((__t = (file.originalName || file.name)) == null ? '' : __t) +\n'</a>\\n        ';\n } ;\n__p += '\\n      </div>\\n      <div class=\"col-md-2\">' +\n((__t = (ctx.fileSize(file.size))) == null ? '' : __t) +\n'</div>\\n      ';\n if (ctx.self.hasTypes) { ;\n__p += '\\n        <div class=\"col-md-2\">\\n          <select class=\"file-type\">\\n            ';\n ctx.component.fileTypes.map(function(type) { ;\n__p += '\\n              <option class=\"test\" value=\"' +\n((__t = ( type.value )) == null ? '' : __t) +\n'\" ';\n if (type.value === file.fileType) { ;\n__p += 'selected=\"selected\"';\n } ;\n__p += '>' +\n((__t = ( type.label )) == null ? '' : __t) +\n'</option>\\n            ';\n }); ;\n__p += '\\n          </select>\\n        </div>\\n      ';\n } ;\n__p += '\\n    </div>\\n  </li>\\n  ';\n }) ;\n__p += '\\n</ul>\\n';\n } else { ;\n__p += '\\n<div>\\n  ';\n ctx.files.forEach(function(file) { ;\n__p += '\\n  <div>\\n    <span>\\n      <img ref=\"fileImage\" src=\"\" alt=\"' +\n((__t = (file.originalName || file.name)) == null ? '' : __t) +\n'\" style=\"width:' +\n((__t = (ctx.component.imageSize)) == null ? '' : __t) +\n'px\" />\\n      ';\n if (!ctx.disabled) { ;\n__p += '\\n      <i class=\"' +\n((__t = (ctx.iconClass('remove'))) == null ? '' : __t) +\n'\" ref=\"removeLink\"></i>\\n      ';\n } ;\n__p += '\\n    </span>\\n  </div>\\n  ';\n }) ;\n__p += '\\n</div>\\n';\n } ;\n__p += '\\n';\n if (!ctx.disabled && (ctx.component.multiple || !ctx.files.length)) { ;\n__p += '\\n<input type=\"file\" style=\"opacity: 0; position: absolute;\" tabindex=\"-1\" ref=\"hiddenFileInputElement\">\\n';\n if (ctx.self.useWebViewCamera) { ;\n__p += '\\n<div class=\"fileSelector\">\\n  <button class=\"btn btn-primary\" ref=\"galleryButton\"><i class=\"fa fa-book\"></i> ' +\n((__t = (ctx.t('Gallery'))) == null ? '' : __t) +\n'</button>\\n  <button class=\"btn btn-primary\" ref=\"cameraButton\"><i class=\"fa fa-camera\"></i> ' +\n((__t = (ctx.t('Camera'))) == null ? '' : __t) +\n'</button>\\n</div>\\n';\n } else if (!ctx.self.cameraMode) { ;\n__p += '\\n<div class=\"fileSelector\" ref=\"fileDrop\">\\n  <i class=\"' +\n((__t = (ctx.iconClass('cloud-upload'))) == null ? '' : __t) +\n'\"></i> ' +\n((__t = (ctx.t('Drop files to attach,'))) == null ? '' : __t) +\n'\\n    ';\n if (ctx.component.image) { ;\n__p += '\\n      <a href=\"#\" ref=\"toggleCameraMode\"><i class=\"fa fa-camera\"></i> ' +\n((__t = (ctx.t('Use Camera,'))) == null ? '' : __t) +\n'</a>\\n    ';\n } ;\n__p += '\\n    ' +\n((__t = (ctx.t('or'))) == null ? '' : __t) +\n' <a href=\"#\" ref=\"fileBrowse\" class=\"browse\">' +\n((__t = (ctx.t('browse'))) == null ? '' : __t) +\n'</a>\\n</div>\\n';\n } else { ;\n__p += '\\n<div>\\n  <video class=\"video\" autoplay=\"true\" ref=\"videoPlayer\"></video>\\n  <canvas style=\"display: none\" ref=\"videoCanvas\"></canvas>\\n</div>\\n<button class=\"btn btn-primary\" ref=\"takePictureButton\"><i class=\"fa fa-camera\"></i> ' +\n((__t = (ctx.t('Take Picture'))) == null ? '' : __t) +\n'</button>\\n<button class=\"btn btn-primary\" ref=\"toggleCameraMode\">' +\n((__t = (ctx.t('Switch to file upload'))) == null ? '' : __t) +\n'</button>\\n';\n } ;\n__p += '\\n';\n } ;\n__p += '\\n';\n ctx.statuses.forEach(function(status) { ;\n__p += '\\n<div class=\"file ' +\n((__t = (ctx.statuses.status === 'error' ? ' has-error' : '')) == null ? '' : __t) +\n'\">\\n  <div class=\"row\">\\n    <div class=\"fileName col-form-label col-sm-10\">' +\n((__t = (status.originalName)) == null ? '' : __t) +\n' <i class=\"' +\n((__t = (ctx.iconClass('remove'))) == null ? '' : __t) +\n'\" ref=\"fileStatusRemove\"></i></div>\\n    <div class=\"fileSize col-form-label col-sm-2 text-right\">' +\n((__t = (ctx.fileSize(status.size))) == null ? '' : __t) +\n'</div>\\n  </div>\\n  <div class=\"row\">\\n    <div class=\"col-sm-12\">\\n      ';\n if (status.status === 'progress') { ;\n__p += '\\n      <div class=\"progress\">\\n        <div class=\"progress-bar\" role=\"progressbar\" aria-valuenow=\"' +\n((__t = (status.progress)) == null ? '' : __t) +\n'\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: ' +\n((__t = (status.progress)) == null ? '' : __t) +\n'\">\\n          <span class=\"sr-only\">' +\n((__t = (status.progress)) == null ? '' : __t) +\n'% ' +\n((__t = (ctx.t('Complete'))) == null ? '' : __t) +\n'</span>\\n        </div>\\n      </div>\\n      ';\n } else { ;\n__p += '\\n      <div class=\"bg-' +\n((__t = (status.status)) == null ? '' : __t) +\n'\">' +\n((__t = (ctx.t(status.message))) == null ? '' : __t) +\n'</div>\\n      ';\n } ;\n__p += '\\n    </div>\\n  </div>\\n</div>\\n';\n }) ;\n__p += '\\n';\n if (!ctx.component.storage || ctx.support.hasWarning) { ;\n__p += '\\n<div class=\"alert alert-warning\">\\n  ';\n if (!ctx.component.storage) { ;\n__p += '\\n    <p>' +\n((__t = (ctx.t('No storage has been set for this field. File uploads are disabled until storage is set up.'))) == null ? '' : __t) +\n'</p>\\n  ';\n } ;\n__p += '\\n  ';\n if (!ctx.support.filereader) { ;\n__p += '\\n    <p>' +\n((__t = (ctx.t('File API & FileReader API not supported.'))) == null ? '' : __t) +\n'</p>\\n  ';\n } ;\n__p += '\\n  ';\n if (!ctx.support.formdata) { ;\n__p += '\\n    <p>' +\n((__t = (ctx.t(\"XHR2's FormData is not supported.\"))) == null ? '' : __t) +\n'</p>\\n  ';\n } ;\n__p += '\\n  ';\n if (!ctx.support.progress) { ;\n__p += '\\n    <p>' +\n((__t = (ctx.t(\"XHR2's upload progress isn't supported.\"))) == null ? '' : __t) +\n'</p>\\n  ';\n } ;\n__p += '\\n</div>\\n';\n } ;\n__p += '\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/file/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/file/index.js":
+/*!*******************************************!*\
+  !*** ./lib/templates/bulma/file/index.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/file/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/file/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/html/form.ejs.js":
+/*!**********************************************!*\
+  !*** ./lib/templates/bulma/html/form.ejs.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<' +\n((__t = (ctx.tag)) == null ? '' : __t) +\n'\\n    ';\n if ( !!ctx.tag.match(/[h, H]\\d/) ) { ;\n__p += '\\n    class=\"title is-' +\n((__t = (ctx.tag.match(/[h, H]\\d/)[0][1])) == null ? '' : __t) +\n'\" ';\n } ;\n__p += ' ref=\"html\"\\n';\n ctx.attrs.forEach(function(attr) { ;\n__p += '\\n    ' +\n((__t = (attr.attr)) == null ? '' : __t) +\n'=\"' +\n((__t = (attr.value)) == null ? '' : __t) +\n'\"\\n  ';\n }) ;\n__p += '\\n>' +\n((__t = (ctx.content)) == null ? '' : __t);\n if (!ctx.singleTags || ctx.singleTags.indexOf(ctx.tag) === -1) { ;\n__p += '</' +\n((__t = (ctx.tag)) == null ? '' : __t) +\n'>';\n } ;\n__p += '\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/html/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/html/index.js":
+/*!*******************************************!*\
+  !*** ./lib/templates/bulma/html/index.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/html/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/html/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/icon/form.ejs.js":
+/*!**********************************************!*\
+  !*** ./lib/templates/bulma/icon/form.ejs.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += '<i ref=\"' +\n((__t = (ctx.ref)) == null ? '' : __t) +\n'\" class=\"' +\n((__t = (ctx.className)) == null ? '' : __t) +\n'\" style=\"' +\n((__t = (ctx.styles)) == null ? '' : __t) +\n'\">' +\n((__t = (ctx.content)) == null ? '' : __t) +\n'</i>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/icon/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/icon/index.js":
+/*!*******************************************!*\
+  !*** ./lib/templates/bulma/icon/index.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/icon/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/icon/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/iconClass.js":
+/*!******************************************!*\
+  !*** ./lib/templates/bulma/iconClass.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\n__webpack_require__(/*! core-js/modules/es.array.concat */ \"./node_modules/core-js/modules/es.array.concat.js\");\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _default = function _default(iconset, name, spinning) {\n  if (iconset === 'fa') {\n    switch (name) {\n      case 'save':\n        name = 'download';\n        break;\n\n      case 'zoom-in':\n        name = 'search-plus';\n        break;\n\n      case 'zoom-out':\n        name = 'search-minus';\n        break;\n\n      case 'question-sign':\n        name = 'question-circle';\n        break;\n\n      case 'remove-circle':\n        name = 'trash';\n        break;\n\n      case 'new-window':\n        name = 'window-restore';\n        break;\n\n      case 'move':\n        name = 'arrows';\n        break;\n    }\n  }\n\n  return spinning ? \"\".concat(iconset, \" \").concat(iconset, \"-\").concat(name, \" \").concat(iconset, \"-spin\") : \"\".concat(iconset, \" \").concat(iconset, \"-\").concat(name);\n};\n\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/iconClass.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/index.js":
+/*!**************************************!*\
+  !*** ./lib/templates/bulma/index.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\n__webpack_require__(/*! core-js/modules/es.symbol */ \"./node_modules/core-js/modules/es.symbol.js\");\n\n__webpack_require__(/*! core-js/modules/es.array.filter */ \"./node_modules/core-js/modules/es.array.filter.js\");\n\n__webpack_require__(/*! core-js/modules/es.object.get-own-property-descriptor */ \"./node_modules/core-js/modules/es.object.get-own-property-descriptor.js\");\n\n__webpack_require__(/*! core-js/modules/es.object.get-own-property-descriptors */ \"./node_modules/core-js/modules/es.object.get-own-property-descriptors.js\");\n\n__webpack_require__(/*! core-js/modules/es.object.keys */ \"./node_modules/core-js/modules/es.object.keys.js\");\n\n__webpack_require__(/*! core-js/modules/es.object.to-string */ \"./node_modules/core-js/modules/es.object.to-string.js\");\n\n__webpack_require__(/*! core-js/modules/es.regexp.to-string */ \"./node_modules/core-js/modules/es.regexp.to-string.js\");\n\n__webpack_require__(/*! core-js/modules/web.dom-collections.for-each */ \"./node_modules/core-js/modules/web.dom-collections.for-each.js\");\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _builder = _interopRequireDefault(__webpack_require__(/*! ./builder */ \"./lib/templates/bulma/builder/index.js\"));\n\nvar _builderComponent = _interopRequireDefault(__webpack_require__(/*! ./builderComponent */ \"./lib/templates/bulma/builderComponent/index.js\"));\n\nvar _builderComponents = _interopRequireDefault(__webpack_require__(/*! ./builderComponents */ \"./lib/templates/bulma/builderComponents/index.js\"));\n\nvar _builderEditForm = _interopRequireDefault(__webpack_require__(/*! ./builderEditForm */ \"./lib/templates/bulma/builderEditForm/index.js\"));\n\nvar _builderPlaceholder = _interopRequireDefault(__webpack_require__(/*! ./builderPlaceholder */ \"./lib/templates/bulma/builderPlaceholder/index.js\"));\n\nvar _builderSidebar = _interopRequireDefault(__webpack_require__(/*! ./builderSidebar */ \"./lib/templates/bulma/builderSidebar/index.js\"));\n\nvar _builderSidebarGroup = _interopRequireDefault(__webpack_require__(/*! ./builderSidebarGroup */ \"./lib/templates/bulma/builderSidebarGroup/index.js\"));\n\nvar _builderWizard = _interopRequireDefault(__webpack_require__(/*! ./builderWizard */ \"./lib/templates/bulma/builderWizard/index.js\"));\n\nvar _button = _interopRequireDefault(__webpack_require__(/*! ./button */ \"./lib/templates/bulma/button/index.js\"));\n\nvar _checkbox = _interopRequireDefault(__webpack_require__(/*! ./checkbox */ \"./lib/templates/bulma/checkbox/index.js\"));\n\nvar _columns = _interopRequireDefault(__webpack_require__(/*! ./columns */ \"./lib/templates/bulma/columns/index.js\"));\n\nvar _component = _interopRequireDefault(__webpack_require__(/*! ./component */ \"./lib/templates/bulma/component/index.js\"));\n\nvar _components = _interopRequireDefault(__webpack_require__(/*! ./components */ \"./lib/templates/bulma/components/index.js\"));\n\nvar _container = _interopRequireDefault(__webpack_require__(/*! ./container */ \"./lib/templates/bulma/container/index.js\"));\n\nvar _datagrid = _interopRequireDefault(__webpack_require__(/*! ./datagrid */ \"./lib/templates/bulma/datagrid/index.js\"));\n\nvar _day = _interopRequireDefault(__webpack_require__(/*! ./day */ \"./lib/templates/bulma/day/index.js\"));\n\nvar _dialog = _interopRequireDefault(__webpack_require__(/*! ./dialog */ \"./lib/templates/bulma/dialog/index.js\"));\n\nvar _editgrid = _interopRequireDefault(__webpack_require__(/*! ./editgrid */ \"./lib/templates/bulma/editgrid/index.js\"));\n\nvar _field = _interopRequireDefault(__webpack_require__(/*! ./field */ \"./lib/templates/bulma/field/index.js\"));\n\nvar _fieldset = _interopRequireDefault(__webpack_require__(/*! ./fieldset */ \"./lib/templates/bulma/fieldset/index.js\"));\n\nvar _file = _interopRequireDefault(__webpack_require__(/*! ./file */ \"./lib/templates/bulma/file/index.js\"));\n\nvar _html = _interopRequireDefault(__webpack_require__(/*! ./html */ \"./lib/templates/bulma/html/index.js\"));\n\nvar _icon = _interopRequireDefault(__webpack_require__(/*! ./icon */ \"./lib/templates/bulma/icon/index.js\"));\n\nvar _iconClass = _interopRequireDefault(__webpack_require__(/*! ./iconClass */ \"./lib/templates/bulma/iconClass.js\"));\n\nvar _input = _interopRequireDefault(__webpack_require__(/*! ./input */ \"./lib/templates/bulma/input/index.js\"));\n\nvar _label = _interopRequireDefault(__webpack_require__(/*! ./label */ \"./lib/templates/bulma/label/index.js\"));\n\nvar _loader = _interopRequireDefault(__webpack_require__(/*! ./loader */ \"./lib/templates/bulma/loader/index.js\"));\n\nvar _loading = _interopRequireDefault(__webpack_require__(/*! ./loading */ \"./lib/templates/bulma/loading/index.js\"));\n\nvar _map = _interopRequireDefault(__webpack_require__(/*! ./map */ \"./lib/templates/bulma/map/index.js\"));\n\nvar _message = _interopRequireDefault(__webpack_require__(/*! ./message */ \"./lib/templates/bulma/message/index.js\"));\n\nvar _multipleMasksInput = _interopRequireDefault(__webpack_require__(/*! ./multipleMasksInput */ \"./lib/templates/bulma/multipleMasksInput/index.js\"));\n\nvar _multiValueRow = _interopRequireDefault(__webpack_require__(/*! ./multiValueRow */ \"./lib/templates/bulma/multiValueRow/index.js\"));\n\nvar _multiValueTable = _interopRequireDefault(__webpack_require__(/*! ./multiValueTable */ \"./lib/templates/bulma/multiValueTable/index.js\"));\n\nvar _panel = _interopRequireDefault(__webpack_require__(/*! ./panel */ \"./lib/templates/bulma/panel/index.js\"));\n\nvar _pdf = _interopRequireDefault(__webpack_require__(/*! ./pdf */ \"./lib/templates/bulma/pdf/index.js\"));\n\nvar _pdfBuilder = _interopRequireDefault(__webpack_require__(/*! ./pdfBuilder */ \"./lib/templates/bulma/pdfBuilder/index.js\"));\n\nvar _pdfBuilderUpload = _interopRequireDefault(__webpack_require__(/*! ./pdfBuilderUpload */ \"./lib/templates/bulma/pdfBuilderUpload/index.js\"));\n\nvar _radio = _interopRequireDefault(__webpack_require__(/*! ./radio */ \"./lib/templates/bulma/radio/index.js\"));\n\nvar _resourceAdd = _interopRequireDefault(__webpack_require__(/*! ./resourceAdd */ \"./lib/templates/bulma/resourceAdd/index.js\"));\n\nvar _select = _interopRequireDefault(__webpack_require__(/*! ./select */ \"./lib/templates/bulma/select/index.js\"));\n\nvar _selectOption = _interopRequireDefault(__webpack_require__(/*! ./selectOption */ \"./lib/templates/bulma/selectOption/index.js\"));\n\nvar _signature = _interopRequireDefault(__webpack_require__(/*! ./signature */ \"./lib/templates/bulma/signature/index.js\"));\n\nvar _sketchpad = _interopRequireDefault(__webpack_require__(/*! ./sketchpad */ \"./lib/templates/bulma/sketchpad/index.js\"));\n\nvar _survey = _interopRequireDefault(__webpack_require__(/*! ./survey */ \"./lib/templates/bulma/survey/index.js\"));\n\nvar _tab = _interopRequireDefault(__webpack_require__(/*! ./tab */ \"./lib/templates/bulma/tab/index.js\"));\n\nvar _table = _interopRequireDefault(__webpack_require__(/*! ./table */ \"./lib/templates/bulma/table/index.js\"));\n\nvar _tree = _interopRequireDefault(__webpack_require__(/*! ./tree */ \"./lib/templates/bulma/tree/index.js\"));\n\nvar _partials = _interopRequireDefault(__webpack_require__(/*! ./tree/partials */ \"./lib/templates/bulma/tree/partials/index.js\"));\n\nvar _warning = _interopRequireDefault(__webpack_require__(/*! ./warning */ \"./lib/templates/bulma/warning/index.js\"));\n\nvar _webform = _interopRequireDefault(__webpack_require__(/*! ./webform */ \"./lib/templates/bulma/webform/index.js\"));\n\nvar _well = _interopRequireDefault(__webpack_require__(/*! ./well */ \"./lib/templates/bulma/well/index.js\"));\n\nvar _wizard = _interopRequireDefault(__webpack_require__(/*! ./wizard */ \"./lib/templates/bulma/wizard/index.js\"));\n\nvar _cssClasses = _interopRequireDefault(__webpack_require__(/*! ./cssClasses */ \"./lib/templates/bulma/cssClasses.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }\n\nfunction _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nvar _default = _objectSpread({\n  transform: function transform(type, text) {\n    if (!text) {\n      return text;\n    }\n\n    switch (type) {\n      case 'class':\n        return this.cssClasses.hasOwnProperty(text.toString()) ? this.cssClasses[text.toString()] : text;\n    }\n\n    return text;\n  },\n  defaultIconset: 'fa',\n  iconClass: _iconClass.default,\n  cssClasses: _cssClasses.default,\n  builder: _builder.default,\n  builderComponent: _builderComponent.default,\n  builderComponents: _builderComponents.default,\n  builderEditForm: _builderEditForm.default,\n  builderPlaceholder: _builderPlaceholder.default,\n  builderSidebar: _builderSidebar.default,\n  builderSidebarGroup: _builderSidebarGroup.default,\n  builderWizard: _builderWizard.default,\n  button: _button.default,\n  checkbox: _checkbox.default,\n  columns: _columns.default,\n  component: _component.default,\n  components: _components.default,\n  container: _container.default,\n  datagrid: _datagrid.default,\n  day: _day.default,\n  dialog: _dialog.default,\n  editgrid: _editgrid.default,\n  field: _field.default,\n  fieldset: _fieldset.default,\n  file: _file.default,\n  html: _html.default,\n  icon: _icon.default,\n  input: _input.default,\n  label: _label.default,\n  loader: _loader.default,\n  loading: _loading.default,\n  map: _map.default,\n  message: _message.default,\n  multipleMasksInput: _multipleMasksInput.default,\n  multiValueRow: _multiValueRow.default,\n  multiValueTable: _multiValueTable.default,\n  panel: _panel.default,\n  pdf: _pdf.default,\n  pdfBuilder: _pdfBuilder.default,\n  pdfBuilderUpload: _pdfBuilderUpload.default,\n  radio: _radio.default,\n  resourceAdd: _resourceAdd.default,\n  select: _select.default,\n  selectOption: _selectOption.default,\n  signature: _signature.default,\n  sketchpad: _sketchpad.default,\n  survey: _survey.default,\n  tab: _tab.default,\n  table: _table.default,\n  tree: _tree.default\n}, _partials.default, {\n  warning: _warning.default,\n  webform: _webform.default,\n  well: _well.default,\n  wizard: _wizard.default\n});\n\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/input/form.ejs.js":
+/*!***********************************************!*\
+  !*** ./lib/templates/bulma/input/form.ejs.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n\n if (ctx.component.prefix || ctx.component.suffix) { ;\n__p += '\\n<div class=\"input-group\">\\n  ';\n } ;\n__p += '\\n  ';\n if (ctx.component.prefix) { ;\n__p += '\\n  <div class=\"input-group-prepend\" ref=\"prefix\">\\n  <span class=\"input-group-text\">\\n    ' +\n((__t = (ctx.component.prefix)) == null ? '' : __t) +\n'\\n  </span>\\n  </div>\\n  ';\n } ;\n__p += '\\n  <' +\n((__t = (ctx.input.type)) == null ? '' : __t) +\n'\\n  ref=\"' +\n((__t = (ctx.input.ref ? ctx.input.ref : 'input')) == null ? '' : __t) +\n'\"\\n  class=' +\n((__t = (ctx.input.type === 'textarea' ? 'textarea' : 'input' )) == null ? '' : __t) +\n'\\n  ';\n for (var attr in ctx.input.attr) { ;\n__p += '\\n  ' +\n((__t = (attr)) == null ? '' : __t) +\n'=\"' +\n((__t = (ctx.input.attr[attr])) == null ? '' : __t) +\n'\"\\n  ';\n } ;\n__p += '\\n  >' +\n((__t = (ctx.input.content)) == null ? '' : __t) +\n'</' +\n((__t = (ctx.input.type)) == null ? '' : __t) +\n'>\\n';\n if (ctx.component.showCharCount) { ;\n__p += '\\n<span class=\"text-muted pull-right\" ref=\"charcount\"></span>\\n';\n } ;\n__p += '\\n';\n if (ctx.component.showWordCount) { ;\n__p += '\\n<span class=\"text-muted pull-right\" ref=\"wordcount\"></span>\\n';\n } ;\n__p += '\\n';\n if (ctx.component.suffix) { ;\n__p += '\\n<div class=\"input-group-append\" ref=\"suffix\">\\n  <span class=\"input-group-text\">\\n    ' +\n((__t = (ctx.component.suffix)) == null ? '' : __t) +\n'\\n  </span>\\n</div>\\n';\n } ;\n__p += '\\n';\n if (ctx.component.prefix || ctx.component.suffix) { ;\n__p += '\\n</div>\\n';\n } ;\n__p += '\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/input/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/input/html.ejs.js":
+/*!***********************************************!*\
+  !*** ./lib/templates/bulma/input/html.ejs.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<div ref=\"value\">';\n if (ctx.value) { ;\n__p +=\n((__t = (ctx.value)) == null ? '' : __t);\n } else { ;\n__p += '-';\n } ;\n__p += '</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/input/html.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/input/index.js":
+/*!********************************************!*\
+  !*** ./lib/templates/bulma/input/index.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/input/form.ejs.js\"));\n\nvar _html = _interopRequireDefault(__webpack_require__(/*! ./html.ejs */ \"./lib/templates/bulma/input/html.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default,\n  html: _html.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/input/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/label/form.ejs.js":
+/*!***********************************************!*\
+  !*** ./lib/templates/bulma/label/form.ejs.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<label class=\"label ' +\n((__t = (ctx.label.className)) == null ? '' : __t) +\n'\">\\n  ' +\n((__t = ( ctx.t(ctx.component.label) )) == null ? '' : __t) +\n'\\n  ';\n if (ctx.component.tooltip) { ;\n__p += '\\n  <i ref=\"tooltip\" class=\"' +\n((__t = (ctx.iconClass('question-sign'))) == null ? '' : __t) +\n' text-muted\"></i>\\n  ';\n } ;\n__p += '\\n</label>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/label/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/label/index.js":
+/*!********************************************!*\
+  !*** ./lib/templates/bulma/label/index.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/label/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/label/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/loader/form.ejs.js":
+/*!************************************************!*\
+  !*** ./lib/templates/bulma/loader/form.ejs.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += '<div class=\"formio-loader\">\\n  <div class=\"loader-wrapper\">\\n    <div class=\"loader text-center\"></div>\\n  </div> \\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/loader/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/loader/index.js":
+/*!*********************************************!*\
+  !*** ./lib/templates/bulma/loader/index.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/loader/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/loader/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/loading/form.ejs.js":
+/*!*************************************************!*\
+  !*** ./lib/templates/bulma/loading/form.ejs.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += 'Loading...\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/loading/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/loading/index.js":
+/*!**********************************************!*\
+  !*** ./lib/templates/bulma/loading/index.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/loading/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/loading/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/map/form.ejs.js":
+/*!*********************************************!*\
+  !*** ./lib/templates/bulma/map/form.ejs.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += '<div id=\"' +\n((__t = (ctx.mapId)) == null ? '' : __t) +\n'\" style=\"min-height: 300px; height: calc(100vh - 600px);\" ref=\"gmapElement\"></div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/map/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/map/index.js":
+/*!******************************************!*\
+  !*** ./lib/templates/bulma/map/index.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/map/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/map/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/message/form.ejs.js":
+/*!*************************************************!*\
+  !*** ./lib/templates/bulma/message/form.ejs.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += '<p class=\"help is-danger\">' +\n((__t = (ctx.message)) == null ? '' : __t) +\n'</p>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/message/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/message/index.js":
+/*!**********************************************!*\
+  !*** ./lib/templates/bulma/message/index.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/message/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/message/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/multiValueRow/form.ejs.js":
+/*!*******************************************************!*\
+  !*** ./lib/templates/bulma/multiValueRow/form.ejs.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<tr ref=\"row\">\\n  <td>\\n    ' +\n((__t = (ctx.element)) == null ? '' : __t) +\n'\\n  </td>\\n  ';\n if (!ctx.disabled) { ;\n__p += '\\n  <td>\\n    <button type=\"button\" class=\"btn btn-secondary\" ref=\"removeRow\">\\n      <i class=\"' +\n((__t = (ctx.iconClass('remove-circle'))) == null ? '' : __t) +\n'\"></i>\\n    </button>\\n  </td>\\n  ';\n } ;\n__p += '\\n</tr>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/multiValueRow/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/multiValueRow/index.js":
+/*!****************************************************!*\
+  !*** ./lib/templates/bulma/multiValueRow/index.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/multiValueRow/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/multiValueRow/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/multiValueTable/form.ejs.js":
+/*!*********************************************************!*\
+  !*** ./lib/templates/bulma/multiValueTable/form.ejs.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<table class=\"table table-bordered\">\\n  <tbody>\\n  ' +\n((__t = (ctx.rows)) == null ? '' : __t) +\n'\\n  ';\n if (!ctx.disabled) { ;\n__p += '\\n  <tr>\\n    <td colspan=\"2\">\\n      <button class=\"btn btn-primary formio-button-add-another\" ref=\"addButton\"><i class=\"' +\n((__t = (ctx.iconClass('plus'))) == null ? '' : __t) +\n'\"></i> ' +\n((__t = (ctx.t(ctx.addAnother))) == null ? '' : __t) +\n'</button>\\n    </td>\\n  </tr>\\n  ';\n } ;\n__p += '\\n  </tbody>\\n</table>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/multiValueTable/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/multiValueTable/index.js":
+/*!******************************************************!*\
+  !*** ./lib/templates/bulma/multiValueTable/index.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/multiValueTable/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/multiValueTable/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/multipleMasksInput/form.ejs.js":
+/*!************************************************************!*\
+  !*** ./lib/templates/bulma/multipleMasksInput/form.ejs.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<div\\n  class=\"input-group formio-multiple-mask-container\"\\n  ref=\"' +\n((__t = (ctx.input.ref ? ctx.input.ref : 'input')) == null ? '' : __t) +\n'\"\\n>\\n  <select\\n    class=\"form-control formio-multiple-mask-select\"\\n    id=\"' +\n((__t = (ctx.key)) == null ? '' : __t) +\n'-mask\"\\n    ref=\"select\">\\n    ';\n ctx.selectOptions.forEach(function(option) { ;\n__p += '\\n    <option value=\"' +\n((__t = (option.value)) == null ? '' : __t) +\n'\">' +\n((__t = (option.label)) == null ? '' : __t) +\n'</option>\\n    ';\n }); ;\n__p += '\\n  </select>\\n  <input\\n    ref=\"mask\"\\n    ';\n for (var attr in ctx.input.attr) { ;\n__p += '\\n    ' +\n((__t = (attr)) == null ? '' : __t) +\n'=\"' +\n((__t = (ctx.input.attr[attr])) == null ? '' : __t) +\n'\"\\n    ';\n } ;\n__p += '\\n  >\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/multipleMasksInput/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/multipleMasksInput/index.js":
+/*!*********************************************************!*\
+  !*** ./lib/templates/bulma/multipleMasksInput/index.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/multipleMasksInput/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/multipleMasksInput/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/panel/form.ejs.js":
+/*!***********************************************!*\
+  !*** ./lib/templates/bulma/panel/form.ejs.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<div class=\"mb-2 card border\">\\n  <div class=\"card-header ' +\n((__t = (ctx.transform('class', 'bg-' + ctx.component.theme))) == null ? '' : __t) +\n'\" ref=\"header\">\\n    <span class=\"mb-0 card-title\">\\n      ';\n if (ctx.component.collapsible) { ;\n__p += '\\n        <i class=\"formio-collapse-icon ' +\n((__t = (ctx.iconClass(ctx.collapsed ? 'plus-square-o' : 'minus-square-o'))) == null ? '' : __t) +\n' text-muted\" data-title=\"Collapse Panel\"></i>\\n      ';\n } ;\n__p += '\\n      ' +\n((__t = (ctx.t(ctx.component.title))) == null ? '' : __t) +\n'\\n      ';\n if (ctx.component.tooltip) { ;\n__p += '\\n        <i ref=\"tooltip\" class=\"' +\n((__t = (ctx.iconClass('question-sign'))) == null ? '' : __t) +\n' text-muted\"></i>\\n      ';\n } ;\n__p += '\\n    </span>\\n  </div>\\n  ';\n if (!ctx.collapsed || ctx.builder) { ;\n__p += '\\n  <div class=\"card-body\" ref=\"' +\n((__t = (ctx.nestedKey)) == null ? '' : __t) +\n'\">\\n    ' +\n((__t = (ctx.children)) == null ? '' : __t) +\n'\\n  </div>\\n  ';\n } ;\n__p += '\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/panel/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/panel/index.js":
+/*!********************************************!*\
+  !*** ./lib/templates/bulma/panel/index.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/panel/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/panel/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/pdf/form.ejs.js":
+/*!*********************************************!*\
+  !*** ./lib/templates/bulma/pdf/form.ejs.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += '<div class=\"' +\n((__t = (ctx.classes)) == null ? '' : __t) +\n'\" ref=\"webform\">\\n\t<span data-noattach=\"true\" ref=\"zoomIn\" style=\"position:absolute;right:10px;top:10px;cursor:pointer;\" class=\"btn btn-default btn-secondary no-disable\">\\n\t\t<i class=\"' +\n((__t = ( ctx.iconClass('zoom-in') )) == null ? '' : __t) +\n'\"></i>\\n\t</span>\\n\t<span data-noattach=\"true\" ref=\"zoomOut\" style=\"position:absolute;right:10px;top:60px;cursor:pointer;\" class=\"btn btn-default btn-secondary no-disable\">\\n\t\t<i class=\"' +\n((__t = ( ctx.iconClass('zoom-out') )) == null ? '' : __t) +\n'\"></i>\\n\t</span>\\n  <div data-noattach=\"true\" ref=\"iframeContainer\"></div>\\n  <button type=\"button\" class=\"btn btn-primary\" ref=\"submitButton\">' +\n((__t = (ctx.t('Submit'))) == null ? '' : __t) +\n'</button>\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/pdf/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/pdf/index.js":
+/*!******************************************!*\
+  !*** ./lib/templates/bulma/pdf/index.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/pdf/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/pdf/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/pdfBuilder/form.ejs.js":
+/*!****************************************************!*\
+  !*** ./lib/templates/bulma/pdfBuilder/form.ejs.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += '<div class=\"formio builder row formbuilder\">\\n  <div class=\"col-xs-4 col-sm-3 col-md-2 formcomponents\">\\n    ' +\n((__t = (ctx.sidebar)) == null ? '' : __t) +\n'\\n  </div>\\n  <div class=\"col-xs-8 col-sm-9 col-md-10 formarea\" ref=\"form\">\\n\t  <div class=\"formio-drop-zone\" ref=\"iframeDropzone\"></div>\\n    ' +\n((__t = (ctx.form)) == null ? '' : __t) +\n'\\n  </div>\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/pdfBuilder/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/pdfBuilder/index.js":
+/*!*************************************************!*\
+  !*** ./lib/templates/bulma/pdfBuilder/index.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/pdfBuilder/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/pdfBuilder/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/pdfBuilderUpload/form.ejs.js":
+/*!**********************************************************!*\
+  !*** ./lib/templates/bulma/pdfBuilderUpload/form.ejs.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += '<div class=\"pdf-upload formio-component-file\">\\n  <h3 class=\"label\">' +\n((__t = (ctx.t('Upload a PDF File'))) == null ? '' : __t) +\n'</h3>\\n  <input type=\"file\" style=\"opacity: 0; position: absolute;\" tabindex=\"-1\" accept=\".pdf\" ref=\"hiddenFileInputElement\">\\n  <div class=\"fileSelector\" ref=\"fileDrop\">\\n    <i class=\"' +\n((__t = (ctx.iconClass('cloud-upload'))) == null ? '' : __t) +\n'\"></i>' +\n((__t = (ctx.t('Drop pdf to start, or'))) == null ? '' : __t) +\n'<a href=\"#\" ref=\"fileBrowse\" class=\"browse\">' +\n((__t = (ctx.t('browse'))) == null ? '' : __t) +\n'</a>\\n  </div>\\n  <div class=\"alert alert-danger\" ref=\"uploadError\">\\n\\n  </div>\\n</div>\\n\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/pdfBuilderUpload/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/pdfBuilderUpload/index.js":
+/*!*******************************************************!*\
+  !*** ./lib/templates/bulma/pdfBuilderUpload/index.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/pdfBuilderUpload/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/pdfBuilderUpload/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/radio/form.ejs.js":
+/*!***********************************************!*\
+  !*** ./lib/templates/bulma/radio/form.ejs.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<div class=\"control\">\\n  ';\n ctx.values.forEach(function(item) { ;\n__p += '\\n  <div class=\"form-check' +\n((__t = (ctx.inline ? '-inline' : '')) == null ? '' : __t) +\n'\" ref=\"wrapper\">\\n    <label class=\"radio\" for=\"' +\n((__t = (ctx.id)) == null ? '' : __t) +\n'' +\n((__t = (ctx.row)) == null ? '' : __t) +\n'-' +\n((__t = (item.value)) == null ? '' : __t) +\n'\">\\n      ';\n if (ctx.component.optionsLabelPosition === 'left' || ctx.component.optionsLabelPosition === 'top') { ;\n__p += '\\n      <span>' +\n((__t = (ctx.t(item.label))) == null ? '' : __t) +\n'</span>\\n      ';\n } ;\n__p += '\\n      <' +\n((__t = (ctx.input.type)) == null ? '' : __t) +\n'\\n        ref=\"input\"\\n        class=\\'radio\\'\\n        ';\n for (var attr in ctx.input.attr) { ;\n__p += '\\n        ' +\n((__t = (attr)) == null ? '' : __t) +\n'=\"' +\n((__t = (ctx.input.attr[attr])) == null ? '' : __t) +\n'\"\\n        ';\n } ;\n__p += '\\n        value=\"' +\n((__t = (item.value)) == null ? '' : __t) +\n'\"\\n        ';\n if (ctx.value && (ctx.value === item.value || (typeof ctx.value === 'object' && ctx.value.hasOwnProperty(item.value) && ctx.value[item.value]))) { ;\n__p += '\\n          checked=true\\n        ';\n } ;\n__p += '\\n        id=\"' +\n((__t = (ctx.id)) == null ? '' : __t) +\n'' +\n((__t = (ctx.row)) == null ? '' : __t) +\n'-' +\n((__t = (item.value)) == null ? '' : __t) +\n'\"\\n      >\\n      ';\n if (!ctx.component.optionsLabelPosition || ctx.component.optionsLabelPosition === 'right' || ctx.component.optionsLabelPosition === 'bottom') { ;\n__p += '\\n      ' +\n((__t = (ctx.t(item.label))) == null ? '' : __t) +\n'\\n      ';\n } ;\n__p += '\\n    </label>\\n  </div>\\n  ';\n }) ;\n__p += '\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/radio/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/radio/html.ejs.js":
+/*!***********************************************!*\
+  !*** ./lib/templates/bulma/radio/html.ejs.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<div ref=\"value\">\\n  ';\n var filtered = ctx.values.filter(function(item) {return ctx.value === item.value || (typeof ctx.value === 'object' && ctx.value.hasOwnProperty(item.value) && ctx.value[item.value])}).map(function(item) { return ctx.t(item.label)}).join(', ') ;\n__p += '\\n  ' +\n((__t = ( filtered )) == null ? '' : __t) +\n'\\n  </div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/radio/html.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/radio/index.js":
+/*!********************************************!*\
+  !*** ./lib/templates/bulma/radio/index.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/radio/form.ejs.js\"));\n\nvar _html = _interopRequireDefault(__webpack_require__(/*! ./html.ejs */ \"./lib/templates/bulma/radio/html.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default,\n  html: _html.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/radio/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/resourceAdd/form.ejs.js":
+/*!*****************************************************!*\
+  !*** ./lib/templates/bulma/resourceAdd/form.ejs.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += '<table class=\"table table-bordered\">\\n  <tbody>\\n    <tr>\\n      <td>\\n        ' +\n((__t = (ctx.element)) == null ? '' : __t) +\n'\\n      </td>\\n    </tr>\\n    <tr>\\n      <td colspan=\"2\">\\n        <button class=\"btn btn-primary formio-button-add-resource\" ref=\"addResource\">\\n          <i class=\"' +\n((__t = (ctx.iconClass('plus'))) == null ? '' : __t) +\n'\"></i>\\n          ' +\n((__t = (ctx.t(ctx.component.addResourceLabel || 'Add Resource'))) == null ? '' : __t) +\n'\\n        </button>\\n      </td>\\n    </tr>\\n  </tbody>\\n</table>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/resourceAdd/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/resourceAdd/index.js":
+/*!**************************************************!*\
+  !*** ./lib/templates/bulma/resourceAdd/index.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/resourceAdd/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/resourceAdd/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/select/form.ejs.js":
+/*!************************************************!*\
+  !*** ./lib/templates/bulma/select/form.ejs.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '    <select\\n            ref=\"' +\n((__t = (ctx.input.ref ? ctx.input.ref : 'selectContainer')) == null ? '' : __t) +\n'\"\\n            ' +\n((__t = ( ctx.input.multiple ? 'multiple' : '' )) == null ? '' : __t) +\n'\\n            ';\n for (var attr in ctx.input.attr) { ;\n__p += '\\n                console.log(\"ssdsdsdsds\")\\n                ' +\n((__t = (attr)) == null ? '' : __t) +\n'=\"' +\n((__t = (ctx.input.attr[attr])) == null ? '' : __t) +\n'\"\\n            ';\n } ;\n__p += '\\n            >\\n    ' +\n((__t = (ctx.selectOptions)) == null ? '' : __t) +\n'\\n    </select>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/select/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/select/html.ejs.js":
+/*!************************************************!*\
+  !*** ./lib/templates/bulma/select/html.ejs.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<!--<div ref=\"value\">';\n if (ctx.value) { ;\n__p +=\n((__t = ( ctx.self.itemValue(ctx.value) )) == null ? '' : __t);\n } else { ;\n__p += '-';\n } ;\n__p += '</div>-->\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/select/html.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/select/index.js":
+/*!*********************************************!*\
+  !*** ./lib/templates/bulma/select/index.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/select/form.ejs.js\"));\n\nvar _html = _interopRequireDefault(__webpack_require__(/*! ./html.ejs */ \"./lib/templates/bulma/select/html.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default,\n  html: _html.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/select/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/selectOption/form.ejs.js":
+/*!******************************************************!*\
+  !*** ./lib/templates/bulma/selectOption/form.ejs.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<!--<option ' +\n((__t = ( ctx.selected ? 'selected=\"selected\"' : '' )) == null ? '' : __t) +\n'-->\\n<!--  value=\"' +\n((__t = (ctx.useId ? ctx.id : ctx.option.value)) == null ? '' : __t) +\n'\"-->\\n<!--  ';\n for (var attr in ctx.attrs) { ;\n__p += '-->\\n<!--    ' +\n((__t = (attr)) == null ? '' : __t) +\n'=\"' +\n((__t = (ctx.attrs[attr])) == null ? '' : __t) +\n'\"-->\\n<!--  ';\n } ;\n__p += '-->\\n<!--  >-->\\n<!--  ' +\n((__t = (ctx.t(ctx.option.label))) == null ? '' : __t) +\n'-->\\n<!--</option>-->\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/selectOption/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/selectOption/html.ejs.js":
+/*!******************************************************!*\
+  !*** ./lib/templates/bulma/selectOption/html.ejs.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n\n if (ctx.selected) { ;\n__p +=\n((__t = (ctx.t(ctx.option.label))) == null ? '' : __t);\n } ;\n__p += '\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/selectOption/html.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/selectOption/index.js":
+/*!***************************************************!*\
+  !*** ./lib/templates/bulma/selectOption/index.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/selectOption/form.ejs.js\"));\n\nvar _html = _interopRequireDefault(__webpack_require__(/*! ./html.ejs */ \"./lib/templates/bulma/selectOption/html.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default,\n  html: _html.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/selectOption/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/signature/form.ejs.js":
+/*!***************************************************!*\
+  !*** ./lib/templates/bulma/signature/form.ejs.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p +=\n((__t = (ctx.element)) == null ? '' : __t) +\n'\\n<div\\n  class=\"signature-pad-body\"\\n  style=\"width: ' +\n((__t = (ctx.component.width)) == null ? '' : __t) +\n';height: ' +\n((__t = (ctx.component.height)) == null ? '' : __t) +\n';padding:0;margin:0;\"\\n  tabindex=\"' +\n((__t = (ctx.component.tabindex || 0)) == null ? '' : __t) +\n'\"\\n  ref=\"padBody\"\\n>\\n  <a class=\"btn btn-sm btn-light signature-pad-refresh\" ref=\"refresh\">\\n    <i class=\"' +\n((__t = (ctx.iconClass('refresh'))) == null ? '' : __t) +\n'\"></i>\\n  </a>\\n  <canvas class=\"signature-pad-canvas\" height=\"' +\n((__t = (ctx.component.height)) == null ? '' : __t) +\n'\" ref=\"canvas\"></canvas>\\n  ';\n if (ctx.required) { ;\n__p += '\\n  <span class=\"form-control-feedback field-required-inline text-danger\">\\n    <i class=\"' +\n((__t = (ctx.iconClass('asterisk'))) == null ? '' : __t) +\n'\"></i>\\n  </span>\\n  ';\n } ;\n__p += '\\n  <img style=\"width: 100%;display: none;\" ref=\"signatureImage\">\\n</div>\\n';\n if (ctx.component.footer) { ;\n__p += '\\n  <div class=\"signature-pad-footer\">\\n    ' +\n((__t = (ctx.t(ctx.component.footer))) == null ? '' : __t) +\n'\\n  </div>\\n';\n } ;\n__p += '\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/signature/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/signature/html.ejs.js":
+/*!***************************************************!*\
+  !*** ./lib/templates/bulma/signature/html.ejs.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += '<img style=\"width: 100%;\" ref=\"signatureImage\">\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/signature/html.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/signature/index.js":
+/*!************************************************!*\
+  !*** ./lib/templates/bulma/signature/index.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/signature/form.ejs.js\"));\n\nvar _html = _interopRequireDefault(__webpack_require__(/*! ./html.ejs */ \"./lib/templates/bulma/signature/html.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default,\n  html: _html.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/signature/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/sketchpad/form.ejs.js":
+/*!***************************************************!*\
+  !*** ./lib/templates/bulma/sketchpad/form.ejs.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += '<div class=\"formio-view-sketchpad-container\" ref=\"sketchpadContainer\">\\n  <div class=\"formio-view-sketchpad-canvas\" ref=\"sketchpadCanvas\"></div>\\n  <div class=\"formio-view-sketpad-background\" ref=\"sketchpadBackground\">' +\n((__t = (ctx.t('SVG Background missing'))) == null ? '' : __t) +\n'</div>\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/sketchpad/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/sketchpad/index.js":
+/*!************************************************!*\
+  !*** ./lib/templates/bulma/sketchpad/index.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/sketchpad/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/sketchpad/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/survey/form.ejs.js":
+/*!************************************************!*\
+  !*** ./lib/templates/bulma/survey/form.ejs.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<table class=\"table table-striped table-bordered\">\\n  <thead>\\n    <tr>\\n      <th></th>\\n      ';\n ctx.component.values.forEach(function(value) { ;\n__p += '\\n      <th style=\"text-align: center;\">' +\n((__t = (ctx.t(value.label))) == null ? '' : __t) +\n'</th>\\n      ';\n }) ;\n__p += '\\n    </tr>\\n  </thead>\\n  <tbody>\\n    ';\n ctx.component.questions.forEach(function(question) { ;\n__p += '\\n    <tr>\\n      <td>' +\n((__t = (ctx.t(question.label))) == null ? '' : __t) +\n'</td>\\n      ';\n ctx.component.values.forEach(function(value) { ;\n__p += '\\n      <td style=\"text-align: center;\">\\n        <input type=\"radio\" name=\"' +\n((__t = ( ctx.self.getInputName(question) )) == null ? '' : __t) +\n'\" value=\"' +\n((__t = (value.value)) == null ? '' : __t) +\n'\" id=\"' +\n((__t = (ctx.key)) == null ? '' : __t) +\n'-' +\n((__t = (question.value)) == null ? '' : __t) +\n'-' +\n((__t = (value.value)) == null ? '' : __t) +\n'\" ref=\"input\">\\n      </td>\\n      ';\n }) ;\n__p += '\\n    </tr>\\n    ';\n }) ;\n__p += '\\n  </tbody>\\n</table>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/survey/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/survey/html.ejs.js":
+/*!************************************************!*\
+  !*** ./lib/templates/bulma/survey/html.ejs.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<table class=\"table table-striped table-bordered\">\\n  <tbody>\\n    ';\n ctx.component.questions.forEach(function(question) { ;\n__p += '\\n    <tr>\\n      <th>' +\n((__t = (ctx.t(question.label))) == null ? '' : __t) +\n'</th>\\n      <td>\\n      ';\n ctx.component.values.forEach(function(item) { ;\n__p += '\\n        ';\n if (ctx.value && ctx.value.hasOwnProperty(question.value) && ctx.value[question.value] === item.value) { ;\n__p += '\\n          ' +\n((__t = (ctx.t(item.label))) == null ? '' : __t) +\n'\\n        ';\n } ;\n__p += '\\n      ';\n }) ;\n__p += '\\n      </td>\\n    </tr>\\n    ';\n }) ;\n__p += '\\n  </tbody>\\n</table>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/survey/html.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/survey/index.js":
+/*!*********************************************!*\
+  !*** ./lib/templates/bulma/survey/index.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/survey/form.ejs.js\"));\n\nvar _html = _interopRequireDefault(__webpack_require__(/*! ./html.ejs */ \"./lib/templates/bulma/survey/html.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default,\n  html: _html.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/survey/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/tab/flat.ejs.js":
+/*!*********************************************!*\
+  !*** ./lib/templates/bulma/tab/flat.ejs.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n\n ctx.component.components.forEach(function(tab, index) { ;\n__p += '\\n  <div class=\"mb-2 card border\">\\n    <div class=\"card-header bg-default\">\\n      <h4 class=\"mb-0 card-title\">' +\n((__t = ( ctx.t(tab.label) )) == null ? '' : __t) +\n'</h4>\\n    </div>\\n    <div class=\"card-body\">\\n      ' +\n((__t = ( ctx.tabComponents[index] )) == null ? '' : __t) +\n'\\n    </div>\\n  </div>\\n';\n }) ;\n__p += '\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/tab/flat.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/tab/form.ejs.js":
+/*!*********************************************!*\
+  !*** ./lib/templates/bulma/tab/form.ejs.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<div class=\"card\">\\n  <div class=\"card-header\">\\n    <ul class=\"nav nav-tabs card-header-tabs\">\\n      ';\n ctx.component.components.forEach(function(tab, index) { ;\n__p += '\\n      <li class=\"nav-item' +\n((__t = ( ctx.currentTab === index ? ' active' : '')) == null ? '' : __t) +\n'\" role=\"presentation\" ref=\"' +\n((__t = (ctx.tabLikey)) == null ? '' : __t) +\n'\">\\n        <a class=\"nav-link' +\n((__t = ( ctx.currentTab === index ? ' active' : '')) == null ? '' : __t) +\n'\" href=\"#' +\n((__t = (tab.key)) == null ? '' : __t) +\n'\" ref=\"' +\n((__t = (ctx.tabLinkKey)) == null ? '' : __t) +\n'\">' +\n((__t = (ctx.t(tab.label))) == null ? '' : __t) +\n'</a>\\n      </li>\\n      ';\n }) ;\n__p += '\\n    </ul>\\n  </div>\\n  ';\n ctx.component.components.forEach(function(tab, index) { ;\n__p += '\\n  <div\\n    role=\"tabpanel\"\\n    class=\"card-body tab-pane' +\n((__t = ( ctx.currentTab === index ? ' active' : '')) == null ? '' : __t) +\n'\"\\n    style=\"display: ' +\n((__t = (ctx.currentTab === index ? 'block' : 'none')) == null ? '' : __t) +\n'\"\\n    ref=\"' +\n((__t = (ctx.tabKey)) == null ? '' : __t) +\n'\"\\n  >\\n    ' +\n((__t = (ctx.tabComponents[index])) == null ? '' : __t) +\n'\\n  </div>\\n  ';\n }) ;\n__p += '\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/tab/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/tab/index.js":
+/*!******************************************!*\
+  !*** ./lib/templates/bulma/tab/index.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _flat = _interopRequireDefault(__webpack_require__(/*! ./flat.ejs */ \"./lib/templates/bulma/tab/flat.ejs.js\"));\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/tab/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  flat: _flat.default,\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/tab/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/table/form.ejs.js":
+/*!***********************************************!*\
+  !*** ./lib/templates/bulma/table/form.ejs.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<table class=\"table\\n    ' +\n((__t = ( ctx.component.striped ? 'table-striped' : '')) == null ? '' : __t) +\n'\\n    ' +\n((__t = ( ctx.component.bordered ? 'table-bordered' : '')) == null ? '' : __t) +\n'\\n    ' +\n((__t = ( ctx.component.hover ? 'table-hover' : '')) == null ? '' : __t) +\n'\\n    ' +\n((__t = ( ctx.component.condensed ? 'table-sm' : '')) == null ? '' : __t) +\n'\\n  \">\\n  ';\n if (ctx.component.header && ctx.component.header.length > 0) { ;\n__p += '\\n  <thead>\\n    <tr>\\n      ';\n ctx.component.header.forEach(function(header) { ;\n__p += '\\n      <th>' +\n((__t = (ctx.t(header))) == null ? '' : __t) +\n'</th>\\n      ';\n }) ;\n__p += '\\n    </tr>\\n  </thead>\\n  ';\n } ;\n__p += '\\n  <tbody>\\n    ';\n ctx.tableComponents.forEach(function(row, rowIndex) { ;\n__p += '\\n    <tr ref=\"row-' +\n((__t = (ctx.id)) == null ? '' : __t) +\n'\">\\n      ';\n row.forEach(function(column, colIndex) { ;\n__p += '\\n      <td ref=\"' +\n((__t = (ctx.tableKey)) == null ? '' : __t) +\n'-' +\n((__t = (rowIndex)) == null ? '' : __t) +\n'\"';\n if (ctx.cellClassName) { ;\n__p += ' class=\"' +\n((__t = (ctx.cellClassName)) == null ? '' : __t) +\n'\"';\n } ;\n__p += '>' +\n((__t = (column)) == null ? '' : __t) +\n'</td>\\n      ';\n }) ;\n__p += '\\n    </tr>\\n    ';\n }) ;\n__p += '\\n  </tbody>\\n</table>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/table/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/table/index.js":
+/*!********************************************!*\
+  !*** ./lib/templates/bulma/table/index.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/table/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/table/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/tree/form.ejs.js":
+/*!**********************************************!*\
+  !*** ./lib/templates/bulma/tree/form.ejs.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n\n if (ctx.node.isRoot) { ;\n__p += '\\n  <div ref=\"root\" class=\"list-group-item\">\\n';\n } else { ;\n__p += '\\n  <li ref=\"node\" class=\"list-group-item col-sm-12 tree__level tree__level_' +\n((__t = ( ctx.odd ? 'odd' : 'even' )) == null ? '' : __t) +\n'\">\\n';\n } ;\n__p += '\\n  ';\n if (ctx.content) { ;\n__p += '\\n    <div ref=\"content\" class=\"tree__node-content\">\\n      ' +\n((__t = ( ctx.content )) == null ? '' : __t) +\n'\\n    </div>\\n  ';\n } ;\n__p += '\\n  ';\n if (ctx.childNodes && ctx.childNodes.length) { ;\n__p += '\\n    <ul ref=\"childNodes\" class=\"tree__node-children list-group row\">\\n      ' +\n((__t = ( ctx.childNodes.join('') )) == null ? '' : __t) +\n'\\n    </ul>\\n  ';\n } ;\n__p += '\\n';\n if (ctx.node.isRoot) { ;\n__p += '\\n  </div>\\n';\n } else { ;\n__p += '\\n  </li>\\n';\n } ;\n__p += '\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/tree/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/tree/index.js":
+/*!*******************************************!*\
+  !*** ./lib/templates/bulma/tree/index.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/tree/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/tree/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/tree/partials/edit.ejs.js":
+/*!*******************************************************!*\
+  !*** ./lib/templates/bulma/tree/partials/edit.ejs.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<div class=\"node-edit\">\\n  <div ref=\"nodeEdit\">' +\n((__t = ( ctx.children )) == null ? '' : __t) +\n'</div>\\n  ';\n if (!ctx.readOnly) { ;\n__p += '\\n    <div class=\"node-actions\">\\n      <button ref=\"saveNode\" class=\"btn btn-primary saveNode\">' +\n((__t = ( ctx.t('Save') )) == null ? '' : __t) +\n'</button>\\n      <button ref=\"cancelNode\" class=\"btn btn-danger cancelNode\">' +\n((__t = ( ctx.t('Cancel') )) == null ? '' : __t) +\n'</button>\\n    </div>\\n  ';\n } ;\n__p += '\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/tree/partials/edit.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/tree/partials/index.js":
+/*!****************************************************!*\
+  !*** ./lib/templates/bulma/tree/partials/index.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _edit = _interopRequireDefault(__webpack_require__(/*! ./edit.ejs */ \"./lib/templates/bulma/tree/partials/edit.ejs.js\"));\n\nvar _view = _interopRequireDefault(__webpack_require__(/*! ./view.ejs */ \"./lib/templates/bulma/tree/partials/view.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  treeView: {\n    form: _view.default\n  },\n  treeEdit: {\n    form: _edit.default\n  }\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/tree/partials/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/tree/partials/view.ejs.js":
+/*!*******************************************************!*\
+  !*** ./lib/templates/bulma/tree/partials/view.ejs.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<div class=\"row\">\\n  ';\n ctx.values.forEach(function(value) { ;\n__p += '\\n    <div class=\"col-sm-2\">\\n      ' +\n((__t = ( value )) == null ? '' : __t) +\n'\\n    </div>\\n  ';\n }) ;\n__p += '\\n  <div class=\"col-sm-3\">\\n    <div class=\"btn-group pull-right\">\\n      ';\n if (ctx.node.hasChildren) { ;\n__p += '\\n        <button ref=\"toggleNode\" class=\"btn btn-default btn-sm toggleNode\">' +\n((__t = ( ctx.t(ctx.node.collapsed ? 'Expand' : 'Collapse') )) == null ? '' : __t) +\n'</button>\\n      ';\n } ;\n__p += '\\n      ';\n if (!ctx.readOnly) { ;\n__p += '\\n        <button ref=\"addChild\" class=\"btn btn-default btn-sm addChild\">' +\n((__t = ( ctx.t('Add') )) == null ? '' : __t) +\n'</button>\\n        <button ref=\"editNode\" class=\"btn btn-default btn-sm editNode\">' +\n((__t = ( ctx.t('Edit') )) == null ? '' : __t) +\n'</button>\\n        <button ref=\"removeNode\" class=\"btn btn-danger btn-sm removeNode\">' +\n((__t = ( ctx.t('Delete') )) == null ? '' : __t) +\n'</button>\\n        ';\n if (ctx.node.revertAvailable) { ;\n__p += '\\n          <button ref=\"revertNode\" class=\"btn btn-danger btn-sm revertNode\">' +\n((__t = ( ctx.t('Revert') )) == null ? '' : __t) +\n'</button>\\n        ';\n } ;\n__p += '\\n      ';\n } ;\n__p += '\\n    </div>\\n  </div>\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/tree/partials/view.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/warning/form.ejs.js":
+/*!*************************************************!*\
+  !*** ./lib/templates/bulma/warning/form.ejs.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += '  <p class=\"help danger\">' +\n((__t = (ctx.message)) == null ? '' : __t) +\n'</p>\\n\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/warning/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/warning/index.js":
+/*!**********************************************!*\
+  !*** ./lib/templates/bulma/warning/index.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/warning/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/warning/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/webform/builder.ejs.js":
+/*!****************************************************!*\
+  !*** ./lib/templates/bulma/webform/builder.ejs.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += '<div class=\"text-muted text-center p-2\">' +\n((__t = ( ctx.t(ctx.component.title) )) == null ? '' : __t) +\n'</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/webform/builder.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/webform/form.ejs.js":
+/*!*************************************************!*\
+  !*** ./lib/templates/bulma/webform/form.ejs.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += '<div class=\"container ' +\n((__t = (ctx.classes)) == null ? '' : __t) +\n'\" ref=\"webform\" novalidate>' +\n((__t = (ctx.children)) == null ? '' : __t) +\n'</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/webform/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/webform/index.js":
+/*!**********************************************!*\
+  !*** ./lib/templates/bulma/webform/index.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/webform/form.ejs.js\"));\n\nvar _builder = _interopRequireDefault(__webpack_require__(/*! ./builder.ejs */ \"./lib/templates/bulma/webform/builder.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default,\n  builder: _builder.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/webform/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/well/form.ejs.js":
+/*!**********************************************!*\
+  !*** ./lib/templates/bulma/well/form.ejs.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += '<div class=\"section\">\\n  <div ref=\"' +\n((__t = (ctx.nestedKey)) == null ? '' : __t) +\n'\">\\n    ' +\n((__t = (ctx.children)) == null ? '' : __t) +\n'\\n  </div>\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/well/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/well/index.js":
+/*!*******************************************!*\
+  !*** ./lib/templates/bulma/well/index.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/well/form.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/well/index.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/wizard/builder.ejs.js":
+/*!***************************************************!*\
+  !*** ./lib/templates/bulma/wizard/builder.ejs.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '';\n__p += '<div class=\"text-muted text-center p-2\">' +\n((__t = ( ctx.t(ctx.component.title) )) == null ? '' : __t) +\n'</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/wizard/builder.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/wizard/form.ejs.js":
+/*!************************************************!*\
+  !*** ./lib/templates/bulma/wizard/form.ejs.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function (ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<div style=\"position: relative;\">\\n  <nav aria-label=\"navigation\">\\n    <ul class=\"pagination\">\\n      ';\n ctx.panels.forEach(function(panel, index) { ;\n__p += '\\n      <li class=\"page-item' +\n((__t = (ctx.currentPage === index ? ' active' : '')) == null ? '' : __t) +\n'\" style=\"\">\\n        <span class=\"page-link\" ref=\"' +\n((__t = (ctx.wizardKey)) == null ? '' : __t) +\n'-link\">' +\n((__t = (panel.title)) == null ? '' : __t) +\n'</span>\\n      </li>\\n      ';\n }) ;\n__p += '\\n    </ul>\\n  </nav>\\n  <div class=\"wizard-page\" ref=\"' +\n((__t = (ctx.wizardKey)) == null ? '' : __t) +\n'\">\\n    ' +\n((__t = (ctx.components)) == null ? '' : __t) +\n'\\n  </div>\\n  <ul class=\"list-inline\">\\n    ';\n if (ctx.buttons.cancel) { ;\n__p += '\\n    <li class=\"list-inline-item\">\\n      <button class=\"btn btn-secondary btn-wizard-nav-cancel\" ref=\"' +\n((__t = (ctx.wizardKey)) == null ? '' : __t) +\n'-cancel\">' +\n((__t = (ctx.t('cancel'))) == null ? '' : __t) +\n'</button>\\n    </li>\\n    ';\n } ;\n__p += '\\n    ';\n if (ctx.buttons.previous) { ;\n__p += '\\n    <li class=\"list-inline-item\">\\n      <button class=\"btn btn-primary btn-wizard-nav-previous\" ref=\"' +\n((__t = (ctx.wizardKey)) == null ? '' : __t) +\n'-previous\">' +\n((__t = (ctx.t('previous'))) == null ? '' : __t) +\n'</button>\\n    </li>\\n    ';\n } ;\n__p += '\\n    ';\n if (ctx.buttons.next) { ;\n__p += '\\n    <li class=\"list-inline-item\">\\n      <button class=\"btn btn-primary btn-wizard-nav-next\" ref=\"' +\n((__t = (ctx.wizardKey)) == null ? '' : __t) +\n'-next\">' +\n((__t = (ctx.t('next'))) == null ? '' : __t) +\n'</button>\\n    </li>\\n    ';\n } ;\n__p += '\\n    ';\n if (ctx.buttons.submit) { ;\n__p += '\\n    <li class=\"list-inline-item\">\\n      <button class=\"btn btn-primary btn-wizard-nav-submit\" ref=\"' +\n((__t = (ctx.wizardKey)) == null ? '' : __t) +\n'-submit\">' +\n((__t = (ctx.t('submit'))) == null ? '' : __t) +\n'</button>\\n    </li>\\n    ';\n } ;\n__p += '\\n  </ul>\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bulma/wizard/form.ejs.js?");
+
+/***/ }),
+
+/***/ "./lib/templates/bulma/wizard/index.js":
+/*!*********************************************!*\
+  !*** ./lib/templates/bulma/wizard/index.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _form = _interopRequireDefault(__webpack_require__(/*! ./form.ejs */ \"./lib/templates/bulma/wizard/form.ejs.js\"));\n\nvar _builder = _interopRequireDefault(__webpack_require__(/*! ./builder.ejs */ \"./lib/templates/bulma/wizard/builder.ejs.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  form: _form.default,\n  builder: _builder.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/bulma/wizard/index.js?");
+
+/***/ }),
+
 /***/ "./lib/templates/index.js":
 /*!********************************!*\
   !*** ./lib/templates/index.js ***!
@@ -3289,7 +4652,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _bootstrap = _interopRequireDefault(__webpack_require__(/*! ./bootstrap */ \"./lib/templates/bootstrap/index.js\"));\n\nvar _bootstrap2 = _interopRequireDefault(__webpack_require__(/*! ./bootstrap3 */ \"./lib/templates/bootstrap3/index.js\"));\n\nvar _semantic = _interopRequireDefault(__webpack_require__(/*! ./semantic */ \"./lib/templates/semantic/index.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  bootstrap: _bootstrap.default,\n  bootstrap3: _bootstrap2.default,\n  semantic: _semantic.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/index.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _bootstrap = _interopRequireDefault(__webpack_require__(/*! ./bootstrap */ \"./lib/templates/bootstrap/index.js\"));\n\nvar _bootstrap2 = _interopRequireDefault(__webpack_require__(/*! ./bootstrap3 */ \"./lib/templates/bootstrap3/index.js\"));\n\nvar _semantic = _interopRequireDefault(__webpack_require__(/*! ./semantic */ \"./lib/templates/semantic/index.js\"));\n\nvar _bulma = _interopRequireDefault(__webpack_require__(/*! ./bulma */ \"./lib/templates/bulma/index.js\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar _default = {\n  bootstrap: _bootstrap.default,\n  bootstrap3: _bootstrap2.default,\n  semantic: _semantic.default,\n  bulma: _bulma.default\n};\nexports.default = _default;\n\n//# sourceURL=webpack:///./lib/templates/index.js?");
 
 /***/ }),
 

@@ -11,11 +11,14 @@ var _bootstrap2 = _interopRequireDefault(require("./bootstrap3"));
 
 var _semantic = _interopRequireDefault(require("./semantic"));
 
+var _bulma = _interopRequireDefault(require("./bulma"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
   bootstrap: _bootstrap.default,
   bootstrap3: _bootstrap2.default,
-  semantic: _semantic.default
+  semantic: _semantic.default,
+  bulma: _bulma.default
 };
 exports.default = _default;
