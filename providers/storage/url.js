@@ -90,7 +90,7 @@ var url = function url(formio) {
 
 
       if (options) {
-        var parsedOptions = JSON.parse(options);
+        var parsedOptions = typeof options === 'string' ? JSON.parse(options) : options;
 
         for (var prop in parsedOptions) {
           xhr[prop] = parsedOptions[prop];
@@ -138,6 +138,22 @@ var url = function url(formio) {
       } else {
         return uploadRequest();
       }
+    },
+    deleteFile: function deleteFile(fileInfo) {
+      return new _nativePromiseOnly.default(function (resolve, reject) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('DELETE', fileInfo.url, true);
+
+        xhr.onload = function () {
+          if (xhr.status >= 200 && xhr.status < 300) {
+            resolve('File deleted');
+          } else {
+            reject(xhr.response || 'Unable to delete file');
+          }
+        };
+
+        xhr.send(null);
+      });
     },
     downloadFile: function downloadFile(file) {
       if (file.private) {

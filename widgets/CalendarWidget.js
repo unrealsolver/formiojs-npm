@@ -256,7 +256,14 @@ function (_InputWidget) {
           } // Creates a date to prevent incorrect parsing of locations such as ru.
 
 
-          var correctDate = (0, _moment.default)(inputDate, (0, _calendarUtils.monthFormatCorrector)(_this3.settings.format)).toDate();
+          var correctDate = null;
+
+          if (format === _this3.settings.dateFormat) {
+            correctDate = (0, _moment.default)(inputDate).toDate();
+          } else {
+            correctDate = (0, _moment.default)(inputDate, (0, _calendarUtils.monthFormatCorrector)(_this3.settings.format)).toDate();
+          }
+
           return _flatpickr.default.parseDate(correctDate, format, currentLocale);
         }
 
@@ -416,7 +423,9 @@ function (_InputWidget) {
     value: function destroy() {
       _get(_getPrototypeOf(CalendarWidget.prototype), "destroy", this).call(this);
 
-      this.calendar.destroy();
+      if (this.calendar) {
+        this.calendar.destroy();
+      }
     }
   }, {
     key: "toggleInvalidClassForWidget",
@@ -516,7 +525,7 @@ function (_InputWidget) {
     key: "widgetLocale",
     get: function get() {
       var currentLocale = _flatpickr.default.l10ns.default;
-      var loc = this.i18next.language.slice(-2);
+      var loc = this.i18next.language ? this.i18next.language.slice(-2) : null;
 
       if (this.settings.useLocaleSettings) {
         if (!_flatpickr.default.l10ns[loc]) {

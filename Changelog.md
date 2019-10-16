@@ -4,6 +4,170 @@ All notable changes to this project will be documented in this file
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 4.3.5
+### Changed
+ - Upgraded choices.js@7.0.2, webpack@4.41.2
+
+### Fixed
+ - Removed redraw when setting a submission, and replace with triggerUpdate. Fixes cursor jumping while typing in ng-formio
+ - Styles for form builder to allow wrapping in the sidebar buttons.
+
+## 4.3.4
+### Changed
+ - Upgraded core-js@3.3.2, jsdom@15.2.0
+
+### Fixed
+ - Problems with the DataGrid and hiding columns when in builder mode.
+ - Fixed custom default value in wysiwyg editors.
+ - Fixed issues where datetime loses format in Wizard 
+
+## 4.3.3
+### Changed
+ - Upgraded webpack@4.41.1, i18next@17.2.0
+
+### Fixed
+ - Issues with the webform builder redraw that was replacing outside containing element.
+ - Reverted: Extend eachComponent and flattenComponent functions
+ - Fixed file component configured as URL saying SyntaxError: JSON.parse: unexpected character at line 1 column 2 of the JSON data
+ - Fixing the schema for wizard builders so that it will save when changes are made.
+
+## 4.3.2
+### Added
+ - Added possibility to add builder groups dynamically.
+ - Content Component Default CSS for embedded images.
+
+### Fixed
+ - Fixing checkValidity and checkData for EditGrid and DataGrid and also fixed defaulting datagrid rows.
+ - Fixing problem where EditGrid is validating when it shouldn't be.
+ - Fixing the error reporting styles when a form is submitted with errors.
+ - Fix event casing error in File.js
+ - Fixing calculated overrides and form builder default values.
+ - Fix day component validation tries to reach refs on other page
+ - Fix emit event on drop - https://github.com/formio/formio.js/pull/1838
+ - Fix day does not populate global data until tabbed or clicked off
+ - Fixing nested forms to work within modals, where nested form is a wizard.
+ - Testing so that all tests will run with every pull request.
+
+### Changed
+ - Updated dompurify@2.0.6, flatpickr@4.6.3, @babel/cli@7.6.4, @babel/core@7.6.4, @babel/preset-env@7.6.3, chance@1.1.3, i18next@17.1.0
+ - Extend eachComponent and flattenComponent functions
+
+## 4.3.1
+### Fixed
+ - Add check for this.widget before destroy(). Fixes https://github.com/formio/formio.js/issues/1817
+
+## 4.3.0
+### Added
+ - Warning message support.
+ - Added cell alignment option to table component.
+
+### Changed
+ - Rollback flatpickr to 4.6.2 to prev version until bug will be fixed
+ - Upgraded dompurify@2.0.4, idb@4.0.5, fetch-mock@7.5.1
+ 
+### Fixed
+ - Add check of component type because of selection properties of input
+
+## 4.2.12
+### Fixed
+ - Issue where EditGrid was validating rows when saved was not pressed.
+ - Fix issue with nested form submission payloads excluding data object
+ - Table component styles to not include a top border when "bordered" is false.
+ - Fix auto updating of item template
+ - Delete handler for storage providers that got orphaned to a wrong branch.
+
+## 4.2.11
+### Fixed
+ - Some type issues that was throwing compile errors about "A rest parameter must be of an array type."
+
+## 4.2.10
+### Fixed
+ - Select as HTML5 not matching strings correctly.
+ - Collapsing of columns in bootstrap 4.
+ 
+### Reverted
+ - Added columns extra small classes, so they are responsive on very small screen sizes.
+
+## 4.2.9
+### Added
+ - Added columns extra small classes, so they are responsive on very small screen sizes.
+ - Added option that removes submit button in empty form within builder.
+
+### Fixed
+ - Fixed type for customDefaultValue
+ - Fixed Content-type header to remove semi-colon from end of "application/json"
+
+### Changed
+ - Upgraded i18next@17.0.18, mocha@6.2.1, eslint@6.5.1, fetch-mock@7.4.0
+
+## 4.2.8
+### Fixed
+ - Submissions not working due to content-type header incorrect.
+
+## 4.2.7
+### Added
+ - Clickable option to wizard that existed in 3.x
+
+### Fixed 
+ - Make PDF render templates use data-noattach; make PDF rendering honor submit button visibility.
+ - ```Content-type``` and ```Accept``` headers being added to non-formio requests
+ - Fix select components not matching numeric values.
+ - Fixed Button component disabling.
+ - Fix select components not properly clearing error messages.
+ 
+## 4.2.6
+### Fixed
+ - Fixes to typescript types.
+ - Removed duplicate table-responsive class, fixed styles for help-block.
+ - Make editgrid dirty overridable.
+ - Add readme and changelog to released version.
+
+## 4.2.5
+### Fixed
+ - Edigrid rows not correctly reporting as valid.
+ - More tests.
+
+## 4.2.4
+### Fixed
+ - More typescript definitions for the Formio class.
+
+## 4.2.3
+### Fixed
+ - Minor bug fixes with tests
+ - More tests passing.
+
+## 4.2.2
+### Fixed
+ - The Typescript definitions for the Formio class.
+ - Fix nested forms not having config if loaded with full=true.
+
+### Changed
+ - Upgraded flatpickr@4.6.3, ejs-loader@0.3.5
+
+## 4.2.1
+### Fixed
+ - Possibility for edit grid render string to crash.
+ - Fixed the default schemas to not include the strictDateValidation flags.
+ - Fixed the default schemas for text field to not include the inputFormat flag.
+
+## 4.2.0
+NPM would not let us publish to this version. Increase minor version.
+
+## 4.2.0-rc.8
+### Changed
+ - Any part of Panel header to trigger collapse instead of just its title
+ - Upgrade dompurify@2.0.3, webpack@4.41.0
+ 
+### Added
+ - isInputComponent method in utils
+ - Type definitions to enable working with TypeScript wrappers.
+ - Added saved status for edit grid rows
+ - Htmlelement self closing tags support
+ - Adding the PDF page to the overlay settings and also tooltips.
+ 
+### Fixed
+ - Signature bug with disabling
+
 ## 4.2.0-rc.7
 ### Fixed
  - Issues with the nested forms not triggering the "ready" flag when it is supposed to.
